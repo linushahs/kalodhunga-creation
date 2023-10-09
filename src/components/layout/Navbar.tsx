@@ -33,7 +33,9 @@ function Navbar() {
         {/* right side  */}
         <ul className="lg:flex items-center gap-12 hidden font-[500] text-lg 3xl:text-2xl">
           <li>
-            <a href="#">Home</a>
+            <a href="#" className="underline decoration-wavy decoration-green">
+              Home
+            </a>
           </li>
           <li>
             <a href="#">About</a>
