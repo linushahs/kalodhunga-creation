@@ -5,12 +5,35 @@ import PixelForge from "./assets/PixelForge";
 import DataMinds from "./assets/DataMinds";
 
 const clientGroupStyle: string =
-  "flex items-center gap-5 font-[500] text-[24px] lg:text-[32px] 3xl:text-[48px]";
+  "flex flex-1 justify-center items-center gap-5 font-[500] text-[24px] lg:text-[32px] 3xl:text-[48px]";
 const clientIconStyle: string = "w-7 h-7";
+
+const clients = [
+  {
+    id: 1,
+    name: "PulseWave",
+    icon: <PulseWave className={clientIconStyle} />,
+  },
+  {
+    id: 2,
+    name: "QuantumX",
+    icon: <QuantumX className={clientIconStyle} />,
+  },
+  {
+    id: 3,
+    name: "PixelForge",
+    icon: <PixelForge className={clientIconStyle} />,
+  },
+  {
+    id: 4,
+    name: "DataMinds",
+    icon: <DataMinds className={clientIconStyle} />,
+  },
+];
 
 function LandingPage() {
   return (
-    <section className=" flex flex-col items-center w-full mx-auto">
+    <section className=" flex flex-col items-center w-full mx-auto border-b border-gray-200">
       <h1 className="uppercase text-center py-4">
         Innovación: Where Design <br /> Meets Code
       </h1>
@@ -31,23 +54,17 @@ function LandingPage() {
 
       {/* CLient we have worked with (section)----- */}
       <div className="container">
-        <h3 className="mt-16 text-center font-medium capitalize sm:text-[24px]  3xl:text-[48px]">
+        <h3 className="mt-16 text-center font-medium capitalize text-[20px] lg:text-[24px]  3xl:text-[48px]">
           Clients we have worked with
         </h3>
 
-        <ul className="client-list grid grid-cols-4 gap-x-12 place-items-center mt-8 overflow-scroll">
-          <li className={clientGroupStyle}>
-            <PulseWave className={clientIconStyle} /> PulseWave
-          </li>
-          <li className={clientGroupStyle}>
-            <QuantumX className={clientIconStyle} /> QuantumX
-          </li>
-          <li className={clientGroupStyle}>
-            <PixelForge className={clientIconStyle} /> PixelForge
-          </li>
-          <li className={clientGroupStyle}>
-            <DataMinds className={clientIconStyle} /> DataMinds
-          </li>
+        <ul className="client-list flex gap-x-12 items-center mt-10 mb-8 ">
+          {clients.map((client) => (
+            <li key={client.id} className={clientGroupStyle}>
+              {client.icon}
+              {client.name}
+            </li>
+          ))}
         </ul>
       </div>
     </section>

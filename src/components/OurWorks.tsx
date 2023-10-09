@@ -2,10 +2,8 @@ import WorkCard from "./WorkCard";
 
 function OurWorks() {
   return (
-    <section className="p-8 w-full">
-      <h1 className="uppercase  text-[24px] font-bold md:font-medium md:text-[42px] xl:text-[46px] 2xl:text-[56px] 2xl:leading-[62px]">
-        (Our works)
-      </h1>
+    <section className="container w-full py-8">
+      <h2 className="">(Our works)</h2>
       <hr className="my-3 border-gray-800" />
 
       <div className="mt-8 grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 xl:grid-cols-3">

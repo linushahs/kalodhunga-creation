@@ -21,16 +21,32 @@
 }
 
 .client-list {
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
+  overflow: hidden;
 }
 
-.client-list::-webkit-scrollbar {
-  visibility: hidden;
+/* .client-list::-webkit-scrollbar {
+  height: 10px;
 }
+
+.client-list::-webkit-scrollbar-track {
+  border: 1px solid gray;
+  height: 8px;
+  border-radius: 18px;
+}
+
+.client-list::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 18px;
+} */
 
 @layer base {
   h1 {
-    @apply text-[24px] leading-[30px] font-[500] sm:text-[40px] sm:leading-[40px] md:text-[4vw] md:leading-[4vw];
+    @apply uppercase text-[24px] leading-[30px] font-[500] sm:text-[40px] sm:leading-[40px] md:text-[4vw] md:leading-[4vw];
+  }
+
+  h2 {
+    @apply uppercase text-[20px] leading-[20px] font-[500] sm:text-[32px] sm:leading-[32px] md:text-[48px] md:leading-[48px];
   }
 }
 
