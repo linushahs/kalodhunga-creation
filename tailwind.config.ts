@@ -20,6 +20,7 @@ const config: Config = {
         green: "#AEF666",
         background: "#0E0E0E",
         black: "#000",
+        light: "#8C8C8C",
       },
     },
   },
