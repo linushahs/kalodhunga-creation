@@ -27,11 +27,11 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="container bg-white z-40 flex items-center justify-between text-black ">
+    <nav className="navbar bg-white z-40 flex items-center justify-between text-black ">
       <div className="flex items-center justify-between w-full">
         <Logo className="w-12 h-12 lg:w-14 lg:h-15" />
         {/* right side  */}
-        <ul className="lg:flex items-center gap-12 hidden font-bold text-lg 3xl:text-2xl">
+        <ul className="lg:flex items-center gap-12 hidden font-[500] text-lg 3xl:text-2xl">
           <li>
             <a href="#">Home</a>
           </li>
@@ -59,7 +59,7 @@ function Navbar() {
 
       {/* backdrop : black ----------- */}
       {isMenuOpen && (
-        <div className="absolute top-0 left-0 w-full h-screen z-20 bg-black/30"></div>
+        <div className="fixed top-0 left-0 w-full h-screen z-20 bg-black/30"></div>
       )}
 
       {/* list of menus (in small devices: tab & mobile) ---->  */}
@@ -69,8 +69,8 @@ function Navbar() {
           isMenuOpen && "active"
         )}
       >
-        <header className="p-6 flex w-full justify-between">
-          <img src="/assets/logo.png" alt="logo" className="w-auto h-7" />
+        <header className="px-6 pt-6 flex w-full justify-between">
+          <Logo className="w-10 h-10 " />
 
           <button
             onClick={() => setIsMenuOpen(false)}
