@@ -33,7 +33,7 @@ function WorkCard({
         <Image
           src={imgSrc}
           alt="picture"
-          width={400}
+          width={700}
           height={100}
           className={twMerge("w-full h-full rounded-t-md ", className)}
         />

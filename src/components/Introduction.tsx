@@ -42,10 +42,10 @@ function Introduction() {
       {/* about kalodhunga (in points) ---- */}
       <ul className="relative flex flex-col mt-8">
         {introductionPoints.map((point) => (
-          <li className="flex py-8 items-center text-[32px] font-[600] border-b border-black">
+          <li className="flex py-8 items-center text-[30px] font-[600] border-b border-black">
             <h3 className="w-[55px]"> 0{point.id}</h3>
 
-            <span className="ml-4 py-2 px-3.5 capitalize font-[400] bg-black text-white rounded-md text-[24px]">
+            <span className="ml-4 py-2 px-3.5 capitalize font-[400] bg-black text-white rounded-md text-[20px]">
               {point.title}
             </span>
           </li>

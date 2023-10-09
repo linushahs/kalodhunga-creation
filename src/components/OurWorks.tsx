@@ -6,7 +6,7 @@ function OurWorks() {
       <h2 className="">(Our works)</h2>
       <hr className="my-3 border-gray-800" />
 
-      <div className="mt-8 grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 xl:grid-cols-2">
         <WorkCard
           title="pulsewave mobile ui design"
           description="web design, visual identity"
