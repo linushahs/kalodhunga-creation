@@ -7,14 +7,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    container: {
-      padding: {
-        DEFAULT: "18px",
-        lg: "50px",
-        "2xl": "91px",
-      },
-    },
     extend: {
+      screens: {
+        "3xl": "1920",
+      },
       colors: {
         purple: "#A566F6",
         green: "#AEF666",
@@ -25,5 +21,8 @@ const config: Config = {
     },
   },
   plugins: [],
+  corePlugins: {
+    container: false,
+  },
 };
 export default config;

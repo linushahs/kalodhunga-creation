@@ -7,3 +7,25 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+.nav-menu {
+  transform: translateX(100%);
+  margin-left: auto;
+  transition: all 0.3s linear;
+}
+
+.nav-menu.active {
+  transform: translateX(0);
+}
+
+@layer base {
+  h1 {
+    @apply text-[5vw] leading-[5vw];
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-full px-[25px] py-[25px] lg:py-[40px] lg:px-[50px] 3xl:px-[80px] 3xl:py-[60px];
+  }
+}

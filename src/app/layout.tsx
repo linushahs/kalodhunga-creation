@@ -1,9 +1,9 @@
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const inter = DM_Sans({ subsets: ["latin"] });
+const inter = Poppins({ subsets: ["latin"], weight: ["200", "300", "400"] });
 
 export const metadata: Metadata = {
   title: "Kalodhunga Creation",
