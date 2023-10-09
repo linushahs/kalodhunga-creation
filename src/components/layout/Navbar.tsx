@@ -27,7 +27,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar bg-white z-40 flex items-center justify-between text-black ">
+    <nav className="relative navbar bg-white z-40 flex items-center justify-between text-black ">
       <div className="flex items-center justify-between w-full">
         <Logo className="w-12 h-12 lg:w-14 lg:h-15" />
         {/* right side  */}
@@ -65,7 +65,7 @@ function Navbar() {
       {/* list of menus (in small devices: tab & mobile) ---->  */}
       <div
         className={twMerge(
-          "nav-menu top-0 right-0 fixed h-full w-[92%]  bg-white flex flex-col justify-between z-30",
+          "nav-menu top-0 right-0 fixed h-full w-[92%] sm:h-[600px] sm:w-[400px] sm:top-[75px] sm:right-8 bg-white flex flex-col justify-between z-30",
           isMenuOpen && "active"
         )}
       >
@@ -91,11 +91,19 @@ function Navbar() {
           ))}
         </ul>
 
-        <ul className="px-6 pb-4  flex flex-wrap gap-x-4 gap-y-2 text-light text-md capitalize">
-          <li>Privacy Policy</li>
-          <li>Terms of use</li>
-          <li>Refund policy</li>
-          <li>2022@Kalodhunga Creations</li>
+        <ul className="px-6 pb-4  flex flex-wrap gap-x-4 gap-y-2 text-light text-sm capitalize">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of use</a>
+          </li>
+          <li>
+            <a href="#">Refund policy</a>
+          </li>
+          <li>
+            <a href="#"> 2022@Kalodhunga Creations</a>
+          </li>
         </ul>
       </div>
     </nav>
