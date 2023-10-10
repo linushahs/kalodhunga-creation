@@ -3,9 +3,10 @@ import PulseWave from "./assets/Pulsewave";
 import QuantumX from "./assets/QuantumX";
 import PixelForge from "./assets/PixelForge";
 import DataMinds from "./assets/DataMinds";
+import Marquee from "react-fast-marquee";
 
 const clientGroupStyle: string =
-  "flex flex-1 justify-center items-center gap-5 font-[500] text-[24px] lg:text-[32px] 3xl:text-[48px]";
+  "flex flex-1 justify-center items-center gap-5 mr-12 font-[500] text-[24px] lg:text-[32px] 3xl:text-[48px]";
 const clientIconStyle: string = "w-7 h-7";
 
 const clients = [
@@ -38,7 +39,7 @@ function LandingPage() {
         Innovación: Where Design <br /> Meets Code
       </h1>
 
-      <p className="container my-6 text-center sm:w-[80%] lg:w-[60%] xl:w-[600px] text-sm lg:text-md xl:text-lg text-gray-600 font-medium">
+      <p className="container my-6 text-center sm:w-[80%] md:w-[60%] xl:w-[600px] text-sm lg:text-md xl:text-lg text-gray-600 font-medium">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eum
         soluta deleniti consectetur deserunt pariatur laudantium cumque unde,
         blanditiis quasi id. Quas necessitatibus
@@ -58,14 +59,16 @@ function LandingPage() {
           Clients we have worked with
         </h3>
 
-        <ul className="client-list flex gap-x-12 items-center mt-10 mb-8 ">
-          {clients.map((client) => (
-            <li key={client.id} className={clientGroupStyle}>
-              {client.icon}
-              {client.name}
-            </li>
-          ))}
-        </ul>
+        <Marquee play pauseOnHover autoFill>
+          <ul className="client-list flex items-center mt-10 mb-8 ">
+            {clients.map((client) => (
+              <li key={client.id} className={clientGroupStyle}>
+                {client.icon}
+                {client.name}
+              </li>
+            ))}
+          </ul>
+        </Marquee>
       </div>
     </section>
   );
