@@ -59,7 +59,7 @@ function LandingPage() {
           Clients we have worked with
         </h3>
 
-        <Marquee play pauseOnHover autoFill>
+        <Marquee play pauseOnClick autoFill>
           <ul className="client-list flex items-center mt-10 mb-8 ">
             {clients.map((client) => (
               <li key={client.id} className={clientGroupStyle}>
