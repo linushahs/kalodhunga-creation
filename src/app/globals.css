@@ -59,11 +59,11 @@
 
 @layer components {
   .navbar {
-    @apply w-full px-[25px] py-[25px] lg:py-[30px] lg:px-[50px] 3xl:px-[80px] 3xl:py-[60px];
+    @apply w-full px-[15px] sm:px-[25px] py-[25px] lg:py-[30px] lg:px-[50px] 3xl:px-[80px] 3xl:py-[60px];
   }
 
   .container {
-    @apply w-full px-[25px] lg:px-[50px] 3xl:px-[80px];
+    @apply w-full px-[15px] sm:px-[25px] lg:px-[50px] 3xl:px-[80px];
   }
 }
 

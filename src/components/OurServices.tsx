@@ -31,7 +31,7 @@ function OurServices() {
         ))}
       </HorizontalSlider>
 
-      <ul className="pt-6 grid grid-cols-1 gap-y-8 lg:grid-cols-4 lg:gap-x-[100px]">
+      <ul className="pt-0 sm:pt-6 grid grid-cols-1 gap-y-8 lg:grid-cols-4 lg:gap-x-[100px]">
         {servicesCategory[0].services?.map((service) => (
           <li
             key={service.name}
@@ -56,7 +56,7 @@ function OurServices() {
             />
 
             <div className="absolute left-6 sm:left-12 lg:bottom-16 lg:left-0 w-full h-full flex items-center lg:justify-center lg:items-end z-10">
-              <h1 className="service-text capitalize text-white font-bold lg:leading-[78px] lg:tracking-wide">
+              <h1 className="service-text capitalize text-white font-bold leading-[50px] lg:leading-[78px] lg:tracking-wide">
                 {service.name.split("\n")[0]}
                 <br />
                 {service.name.split("\n")[1]}
