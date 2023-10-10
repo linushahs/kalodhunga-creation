@@ -24,6 +24,16 @@
   overflow: hidden;
 }
 
+.service-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.category-wrap.active {
+  background: linear-gradient(to right, #63de18, #0057ff);
+  padding: 3px;
+}
+
 @keyframes horizontalScroll {
   0% {
     transform: translateX(0);
@@ -50,5 +60,12 @@
 
   .container {
     @apply w-full px-[25px] lg:px-[50px] 3xl:px-[80px];
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .service-text {
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
   }
 }
