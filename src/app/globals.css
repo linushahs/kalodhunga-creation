@@ -38,17 +38,6 @@
   padding: 3px;
 }
 
-/* .swiper {
-  border-radius: 32px !important;
-}
-
-.swiper-wrapper {
-  width: 100%;
-  display: flex !important;
-  align-items: center !important;
-}
-*/
-
 @keyframes horizontalScroll {
   0% {
     transform: translateX(0);

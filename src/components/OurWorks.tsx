@@ -2,7 +2,7 @@ import WorkCard from "./WorkCard";
 
 function OurWorks() {
   return (
-    <section className="container w-full py-8">
+    <section className="container py-10 border-b border-gray-200">
       <h2 className="w-full border-b border-gray-500 pb-6">(our works)</h2>
 
       <div className="mt-8 grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 xl:grid-cols-2">

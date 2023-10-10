@@ -3,46 +3,43 @@
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { servicesCategory } from "./utils/constants";
-import { Scrollbar } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/scrollbar";
+import HorizontalSlider from "./utils/HorizontalSlider";
 
 function OurServices() {
   return (
     <section className="container py-10 border-b border-gray-200">
       <h2 className="w-full border-b border-gray-500 pb-6">our services</h2>
 
-      <div className="my-8">
-        <Swiper slidesPerView={"auto"} spaceBetween={15} className="">
-          {servicesCategory.map((category, id) => (
-            <SwiperSlide
-              key={id}
-              className={twMerge(
-                "category-wrap rounded-full !w-fit",
-                id === 0 && "active"
-              )}
+      <HorizontalSlider>
+        {servicesCategory.map((category, id) => (
+          <div
+            key={id}
+            className={twMerge(
+              "category-wrap rounded-full min-w-fit",
+              id === 0 && "active"
+            )}
+          >
+            <button
+              key={category.title}
+              className={
+                "h-full py-1.5 px-5 bg-black rounded-full text-white text-lg"
+              }
             >
-              <button
-                key={category.title}
-                className={
-                  "!h-full py-1.5 px-5 bg-black rounded-full text-white text-lg"
-                }
-              >
-                {category.title}
-              </button>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+              {category.title}
+            </button>
+          </div>
+        ))}
+      </HorizontalSlider>
 
       <ul className="pt-6 grid grid-cols-1 gap-y-8 lg:grid-cols-4 lg:gap-x-[100px]">
         {servicesCategory[0].services?.map((service) => (
           <li
             key={service.name}
-            className="relative rounded-lg h-[120px] sm:h-[200px] lg:h-[700px]  bg-no-repeat bg-cover bg-center"
+            className="relative rounded-lg h-[120px] sm:h-[200px] lg:h-[700px] xl:h-[800px] bg-no-repeat bg-cover bg-center"
           >
             <Image
               width={1000}
