@@ -45,7 +45,7 @@ function OurServices() {
               className="hidden lg:block h-full min-w-auto absolute top-0 left-0 -z-20  rounded-lg"
             />
 
-            <img
+            <Image
               width={1000}
               height={1000}
               src={

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import StartIcon from "./assets/StarIcon";
 
 const introductionPoints = [
@@ -52,7 +53,10 @@ function Introduction() {
       {/* about kalodhunga (in points) ---- */}
       <ul className="relative flex flex-col mt-6 sm:mt-0 lg:mt-8">
         {introductionPoints.map((point) => (
-          <li className="flex py-5 sm:py-8 items-center text-[20px] sm:text-[30px] font-[600] border-b border-black">
+          <li
+            key={point.id}
+            className="flex py-5 sm:py-8 items-center text-[20px] sm:text-[30px] font-[600] border-b border-black"
+          >
             <h3 className="min-w-[35px] sm:min-w-[55px]"> 0{point.id}</h3>
 
             <span className=" py-2 px-3.5 capitalize font-[400] bg-black text-white rounded-md sm:rounded-lg text-[13px] sm:text-[20px]">
@@ -61,14 +65,18 @@ function Introduction() {
           </li>
         ))}
 
-        <img
+        <Image
+          width={1000}
+          height={200}
           src="assets/flower.png"
           alt="picture"
           className="hidden lg:block w-[320px] h-auto absolute right-0 bottom-[80px]"
         />
       </ul>
 
-      <img
+      <Image
+        width={1000}
+        height={200}
         src="assets/flower.png"
         alt="picture"
         className="lg:hidden w-full h-auto mt-8 sm:mt-8"
