@@ -3,10 +3,6 @@
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { servicesCategory } from "./utils/constants";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/scrollbar";
 import HorizontalSlider from "./utils/HorizontalSlider";
 
 function OurServices() {
@@ -60,7 +56,7 @@ function OurServices() {
             />
 
             <div className="absolute left-6 sm:left-12 lg:bottom-16 lg:left-0 w-full h-full flex items-center lg:justify-center lg:items-end z-10">
-              <h1 className="service-text capitalize text-white font-bold lg:leading-[60px]">
+              <h1 className="service-text capitalize text-white font-bold lg:leading-[78px] lg:tracking-wide">
                 {service.name.split("\n")[0]}
                 <br />
                 {service.name.split("\n")[1]}

@@ -53,9 +53,9 @@ function Introduction() {
       <ul className="relative flex flex-col mt-6 sm:mt-0 lg:mt-8">
         {introductionPoints.map((point) => (
           <li className="flex py-5 sm:py-8 items-center text-[20px] sm:text-[30px] font-[600] border-b border-black">
-            <h3 className="min-w-[35px] sm:w-[55px]"> 0{point.id}</h3>
+            <h3 className="min-w-[35px] sm:min-w-[55px]"> 0{point.id}</h3>
 
-            <span className=" py-2 px-3.5 capitalize font-[400] bg-black text-white rounded-md text-[13px] sm:text-[20px]">
+            <span className=" py-2 px-3.5 capitalize font-[400] bg-black text-white rounded-md sm:rounded-lg text-[13px] sm:text-[20px]">
               {point.title}
             </span>
           </li>
