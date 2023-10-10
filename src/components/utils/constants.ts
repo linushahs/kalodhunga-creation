@@ -59,4 +59,22 @@ export const servicesCategory: Category[] = [
   {
     title: "User Interface",
   },
+  {
+    title: "User Experience",
+  },
+  {
+    title: "User Interface",
+  },
+  {
+    title: "User Experience",
+  },
+  {
+    title: "User Interface",
+  },
+  {
+    title: "User Experience",
+  },
+  {
+    title: "User Interface",
+  },
 ];

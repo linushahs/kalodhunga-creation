@@ -1,9 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import HorizontalSwiper from "./utils/HorizontalSwiper";
-import { servicesCategory } from "./utils/constants";
 import { twMerge } from "tailwind-merge";
+import { servicesCategory } from "./utils/constants";
+import { Scrollbar } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/scrollbar";
 
 function OurServices() {
   return (
@@ -11,25 +16,26 @@ function OurServices() {
       <h2 className="w-full border-b border-gray-500 pb-6">our services</h2>
 
       <div className="my-8">
-        <HorizontalSwiper elements={servicesCategory}>
+        <Swiper slidesPerView={"auto"} spaceBetween={15} className="">
           {servicesCategory.map((category, id) => (
-            <div
+            <SwiperSlide
+              key={id}
               className={twMerge(
-                "category-wrap rounded-full min-w-fit",
+                "category-wrap rounded-full !w-fit",
                 id === 0 && "active"
               )}
             >
               <button
                 key={category.title}
                 className={
-                  "w-full h-full py-1.5 px-5 bg-black rounded-full text-white text-lg"
+                  "!h-full py-1.5 px-5 bg-black rounded-full text-white text-lg"
                 }
               >
                 {category.title}
               </button>
-            </div>
+            </SwiperSlide>
           ))}
-        </HorizontalSwiper>
+        </Swiper>
       </div>
 
       <ul className="pt-6 grid grid-cols-1 gap-y-8 lg:grid-cols-4 lg:gap-x-[100px]">

@@ -29,10 +29,25 @@
   transform: rotate(180deg);
 }
 
+.category-wrap {
+  background-color: black;
+}
+
 .category-wrap.active {
   background: linear-gradient(to right, #63de18, #0057ff);
   padding: 3px;
 }
+
+/* .swiper {
+  border-radius: 32px !important;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+}
+*/
 
 @keyframes horizontalScroll {
   0% {
