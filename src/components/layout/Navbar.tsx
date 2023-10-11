@@ -12,7 +12,7 @@ type Menu = {
   url: string;
 };
 
-const menus: Menu[] = [
+export const menus: Menu[] = [
   "home",
   "about",
   "services",

@@ -10,7 +10,7 @@ function Contact() {
     <section className="container py-10 border-b border-gray-200">
       <header className="flex justify-between items-start">
         <h1 className="capitalize">
-          get in touch, let's <br />
+          get in touch, let&apos;s <br />
           create magic together
         </h1>
         <span className="mt-6 py-1 px-2.5 sm:px-3.5 font-bold text-[9px] sm:text-xs border border-black rounded-full">
