@@ -17,6 +17,8 @@ const config: Config = {
         background: "#0E0E0E",
         black: "#000",
         light: "#8C8C8C",
+        "text-input": "#EEEEEE",
+        "submit-btn": "#F8D1B4",
       },
     },
   },

@@ -1,3 +1,5 @@
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Introduction from "@/components/Introduction";
 import LandingPage from "@/components/LandingPage";
 import OurProjects from "@/components/OurProjects";
@@ -12,6 +14,8 @@ export default function Home() {
       <OurServices />
       <OurProjects />
       <WorkingProcess />
+      <Contact />
+      <Footer />
     </main>
   );
 }
