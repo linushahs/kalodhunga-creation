@@ -20,7 +20,7 @@ function WorkCard({
       <div className="w-full aspect-video flex justify-center items-center rounded-md">
         <Image
           src={imgSrc}
-          alt="picture"
+          alt="project-thumbnail"
           width={1000}
           height={100}
           className={twMerge(

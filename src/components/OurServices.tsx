@@ -55,7 +55,7 @@ function OurServices() {
               className="block lg:hidden h-full w-full object-cover absolute top-0 left-0 -z-20  rounded-lg"
             />
 
-            <div className="absolute left-6 sm:left-12 lg:bottom-16 h-full flex items-center lg:justify-center lg:items-end z-10">
+            <div className="absolute left-6 sm:left-12 lg:bottom-16 h-full flex items-center lg:justify-center lg:items-end">
               <h1 className="service-text capitalize text-white font-bold leading-[50px] lg:leading-[78px] lg:tracking-wide">
                 {service.name.split("\n")[0]}
                 <br />

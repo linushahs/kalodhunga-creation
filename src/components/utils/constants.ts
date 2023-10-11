@@ -77,40 +77,28 @@ export const servicesCategory: Category[] = [
   {
     title: "User Interface",
   },
-  {
-    title: "User Experience",
-  },
-  {
-    title: "User Interface",
-  },
-  {
-    title: "User Experience",
-  },
-  {
-    title: "User Interface",
-  },
 ];
 
 export const projects: Project[] = [
   {
     title: "pulsewave mobile ui design",
     description: "web design, visual identity",
-    img: "/assets/pic3.png",
+    img: "/assets/workcard-pic1.png",
   },
   {
     title: "bonewa mobile app development",
     description: "web design, visual identity",
-    img: "/assets/pic2.png",
+    img: "/assets/workcard-pic3.png",
   },
   {
     title: "pulsewave mobile ui design",
     description: "web design, visual identity",
-    img: "/assets/pic1.png",
+    img: "/assets/workcard-pic2.png",
   },
   {
     title: "bonewa mobile app development",
     description: "web design, visual identity",
-    img: "/assets/pic2.png",
+    img: "/assets/workcard-pic3.png",
   },
 ];
 
