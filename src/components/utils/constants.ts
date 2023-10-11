@@ -9,6 +9,18 @@ type Category = {
   services?: Service[];
 };
 
+type Project = {
+  title: string;
+  description: string;
+  img: string;
+};
+
+type WorkProcessPoint = {
+  title: string;
+  description: string;
+  img: string;
+};
+
 export const servicesCategory: Category[] = [
   {
     title: "Design",
@@ -79,7 +91,7 @@ export const servicesCategory: Category[] = [
   },
 ];
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: "pulsewave mobile ui design",
     description: "web design, visual identity",
@@ -99,5 +111,32 @@ export const projects = [
     title: "bonewa mobile app development",
     description: "web design, visual identity",
     img: "/assets/pic2.png",
+  },
+];
+
+export const workProcessPoints: WorkProcessPoint[] = [
+  {
+    title: "Define Objectives and Scope",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
+    img: "/assets/process1.png",
+  },
+  {
+    title: "Plan and Strategize",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
+    img: "/assets/process1.png",
+  },
+  {
+    title: "Execute and implement",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
+    img: "/assets/process1.png",
+  },
+  {
+    title: "monitor and evaluate",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
+    img: "/assets/process1.png",
   },
 ];
