@@ -1,7 +1,7 @@
 import Introduction from "@/components/Introduction";
 import LandingPage from "@/components/LandingPage";
+import OurProjects from "@/components/OurProjects";
 import OurServices from "@/components/OurServices";
-import OurWorks from "@/components/OurWorks";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <LandingPage />
       <Introduction />
       <OurServices />
-      <OurWorks />
+      <OurProjects />
     </main>
   );
 }
