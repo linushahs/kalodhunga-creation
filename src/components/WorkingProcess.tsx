@@ -16,7 +16,7 @@ function WorkingProcess() {
           understand our working <br />
           process
         </h1>
-        <span className="mt-6 py-1 px-2.5 sm:px-3.5 font-bold text-[9px] sm:text-xs border border-black rounded-full">
+        <span className="hidden sm:block mt-6 py-1 px-2.5 sm:px-3.5 font-bold text-[9px] sm:text-xs border border-black rounded-full">
           07
         </span>
       </header>
@@ -44,7 +44,7 @@ function WorkingProcess() {
                   "p-6 sm:px-10 sm:py-12 flex flex-col justify-between h-[250px] sm:h-[300px] md:h-[400px] text-white transition-all"
               )}
             >
-              <h3 className="text-lg sm:text-xl capitalize">
+              <h3 className="text-lg sm:text-xl lg:text-[22px] capitalize">
                 0{id + 1}{" "}
                 <span className="ml-3 font-medium">{point.title}</span>
               </h3>

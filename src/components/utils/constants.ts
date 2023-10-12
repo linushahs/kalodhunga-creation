@@ -26,6 +26,13 @@ type Social = {
   link: string;
 };
 
+type Testimonial = {
+  comment: string;
+  author: string;
+  position: string;
+  companyLogo: string;
+};
+
 export const servicesCategory: Category[] = [
   {
     title: "Design",
@@ -150,5 +157,29 @@ export const socials: Social[] = [
   {
     name: "behance",
     link: "behance.com/",
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringillaLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
+    author: "Harry Wells",
+    position: "Co founder & ceo of bitkub",
+    companyLogo: "/assets/bitkub-logo.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringillaLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
+    author: "Barry Wells",
+    position: "Co founder & ceo of bitkub",
+    companyLogo: "/assets/bitkub-logo.png",
+  },
+  {
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringillaLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
+    author: "Harrison Wells",
+    position: "Co founder & ceo of bitkub",
+    companyLogo: "/assets/bitkub-logo.png",
   },
 ];

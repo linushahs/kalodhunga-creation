@@ -56,11 +56,11 @@ function OurServices() {
             />
 
             <div className="absolute left-6 sm:left-12 lg:bottom-16 h-full flex items-center lg:justify-center lg:items-end">
-              <h1 className="service-text capitalize text-white font-bold leading-[50px] lg:leading-[78px] lg:tracking-wide">
+              <h3 className="service-text ">
                 {service.name.split("\n")[0]}
                 <br />
                 {service.name.split("\n")[1]}
-              </h1>
+              </h3>
             </div>
           </li>
         ))}

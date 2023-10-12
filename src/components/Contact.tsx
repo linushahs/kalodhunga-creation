@@ -17,7 +17,7 @@ function Contact() {
           get in touch, let&apos;s <br />
           create magic together
         </h1>
-        <span className="mt-6 py-1 px-2.5 sm:px-3.5 font-bold text-[9px] sm:text-xs border border-black rounded-full">
+        <span className="hidden sm:block mt-6 py-1 px-2.5 sm:px-3.5 font-bold text-[9px] sm:text-xs border border-black rounded-full">
           07
         </span>
       </header>

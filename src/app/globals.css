@@ -49,7 +49,7 @@
 
 @layer base {
   h1 {
-    @apply uppercase text-[24px] leading-[30px] font-[600]  sm:text-[40px] sm:leading-[40px] lg:font-[500] lg:text-[4vw] lg:leading-[4vw];
+    @apply uppercase text-[28px] leading-[34px] font-[600]  sm:text-[40px] sm:leading-[48px] lg:font-[500] lg:text-[4vw] lg:leading-[4vw];
   }
 
   h2 {
@@ -64,6 +64,10 @@
 
   .container {
     @apply w-full px-[15px] sm:px-[25px] lg:px-[50px] 3xl:px-[80px];
+  }
+
+  .service-text {
+    @apply sm:text-[40px] capitalize text-white font-bold text-[22px] lg:text-[4vw] leading-[32px] sm:leading-[50px] lg:leading-[78px] lg:tracking-wide;
   }
 }
 
