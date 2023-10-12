@@ -1,6 +1,6 @@
 import Logo from "./assets/Logo";
 
-const linkGroup = "w-full";
+const linkGroup = "w-[200px]";
 const linkHeadStyle = "font-medium text-xl";
 const linkStyle =
   "text-gray-600 mt-4 hover:text-black hover:font-medium text-left";
@@ -26,7 +26,7 @@ function Footer() {
       </div>
 
       {/* right side ------ > */}
-      <div className="w-1/2 flex">
+      <div className="w-1/2 flex justify-between">
         <div className={linkGroup}>
           <h3 className={linkHeadStyle}>Quick links</h3>
           <ul className="mt-5">

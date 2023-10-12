@@ -21,6 +21,11 @@ type WorkProcessPoint = {
   img: string;
 };
 
+type Social = {
+  name: string;
+  link: string;
+};
+
 export const servicesCategory: Category[] = [
   {
     title: "Design",
@@ -126,5 +131,24 @@ export const workProcessPoints: WorkProcessPoint[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
     img: "/assets/process1.png",
+  },
+];
+
+export const socials: Social[] = [
+  {
+    name: "facebook",
+    link: "facebook.com/",
+  },
+  {
+    name: "instagram",
+    link: "instagram.com/",
+  },
+  {
+    name: "twitter",
+    link: "twitter.com/",
+  },
+  {
+    name: "behance",
+    link: "behance.com/",
   },
 ];
