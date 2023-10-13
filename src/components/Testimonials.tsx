@@ -71,7 +71,7 @@ function Testimonials() {
           <img
             src={currentTestimonial.companyLogo}
             alt="company-logo"
-            className="border-l-2 border-black pl-3"
+            className="border-l border-black pl-3"
           />
         </div>
       </div>

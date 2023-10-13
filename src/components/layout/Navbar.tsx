@@ -27,27 +27,33 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="relative navbar bg-white z-40 flex items-center justify-between text-black ">
+    <nav
+      id="home"
+      className="relative navbar bg-white z-40 flex items-center justify-between text-black "
+    >
       <div className="flex items-center justify-between w-full">
         <Logo className="w-12 h-12 lg:w-14 lg:h-15" />
         {/* right side  */}
         <ul className="lg:flex items-center gap-12 hidden font-[500] text-lg 3xl:text-2xl">
           <li>
-            <a href="#" className="underline decoration-wavy decoration-green">
+            <a
+              href="#home"
+              className="underline decoration-wavy decoration-green"
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#">Works</a>
+            <a href="#projects">Projects</a>
           </li>
         </ul>
 

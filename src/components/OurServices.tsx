@@ -7,7 +7,7 @@ import HorizontalSlider from "./utils/HorizontalSlider";
 
 function OurServices() {
   return (
-    <section className="container py-10 border-b border-gray-200">
+    <section id="services" className="container py-10 border-b border-gray-200">
       <h2 className="w-full border-b border-gray-500 pb-6">our services</h2>
 
       <HorizontalSlider>
