@@ -11,30 +11,42 @@ const HorizontalSlider: React.FC<HorizontalSliderProps> = ({
   className,
 }) => {
   let isDragStart = false,
-    prevPageX: number,
+    prevX: number,
     prevScrollLeft: number;
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  const handleDragStart = (e: React.MouseEvent) => {
+  const handleDragStart = (x: number) => {
     isDragStart = true;
-    prevPageX = e.pageX;
+    prevX = x;
     if (carouselRef.current) prevScrollLeft = carouselRef.current?.scrollLeft;
   };
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleDragMove = (x: number) => {
     if (!isDragStart) return;
-    e.preventDefault();
-    let deltaX = e.pageX - prevPageX;
+    const deltaX = x - prevX;
     if (carouselRef.current)
       carouselRef.current.scrollLeft = prevScrollLeft - deltaX;
+  };
+
+  const handleDragEnd = () => {
+    isDragStart = false;
   };
 
   return (
     <div
       ref={carouselRef}
-      onMouseDown={handleDragStart}
-      onMouseMove={handleMouseMove}
-      onMouseUp={() => (isDragStart = false)}
+      onMouseDown={(e) => handleDragStart(e.pageX)}
+      onMouseMove={(e) => {
+        e.preventDefault();
+        handleDragMove(e.pageX);
+      }}
+      onMouseUp={handleDragEnd}
+      onTouchStart={(e) => handleDragStart(e.touches[0].pageX)}
+      onTouchMove={(e) => {
+        e.preventDefault();
+        handleDragMove(e.touches[0].pageX);
+      }}
+      onTouchEnd={handleDragEnd}
       className={twMerge(
         "my-8 flex items-center gap-4 overflow-x-hidden rounded-full",
         className

@@ -61,7 +61,7 @@ function OurTeam() {
               width={400}
               height={400}
               src={member.imgSrc}
-              className="w-[200px] sm:w-[250px] lg:w-[300px]"
+              className="w-[220px] sm:w-[280px] lg:w-[350px]"
             />
 
             <h3 className="mt-3 text-lg sm:text-xl lg:text-2xl font-[600]">
