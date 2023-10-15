@@ -24,8 +24,9 @@ const HorizontalSlider: React.FC<HorizontalSliderProps> = ({
   const handleDragMove = (x: number) => {
     if (!isDragStart) return;
     const deltaX = x - prevX;
-    if (carouselRef.current)
-      carouselRef.current.scrollLeft = prevScrollLeft - deltaX;
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft = prevScrollLeft - deltaX * 1.5;
+    }
   };
 
   const handleDragEnd = () => {
@@ -42,10 +43,7 @@ const HorizontalSlider: React.FC<HorizontalSliderProps> = ({
       }}
       onMouseUp={handleDragEnd}
       onTouchStart={(e) => handleDragStart(e.touches[0].pageX)}
-      onTouchMove={(e) => {
-        e.preventDefault();
-        handleDragMove(e.touches[0].pageX);
-      }}
+      onTouchMove={(e) => handleDragMove(e.touches[0].pageX)}
       onTouchEnd={handleDragEnd}
       className={twMerge(
         "my-8 flex items-center gap-4 overflow-x-hidden rounded-full",
