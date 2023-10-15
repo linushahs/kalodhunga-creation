@@ -50,6 +50,7 @@ function LandingPage() {
         alt="laptop"
         width={800}
         height={100}
+        priority={true}
         className="w-full sm:w-[80%] aspect-[16/9]"
       />
 

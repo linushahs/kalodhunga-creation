@@ -1,10 +1,15 @@
 import { useRef } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface HorizontalSliderProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-const HorizontalSlider: React.FC<HorizontalSliderProps> = ({ children }) => {
+const HorizontalSlider: React.FC<HorizontalSliderProps> = ({
+  children,
+  className,
+}) => {
   let isDragStart = false,
     prevPageX: number,
     prevScrollLeft: number;
@@ -30,7 +35,10 @@ const HorizontalSlider: React.FC<HorizontalSliderProps> = ({ children }) => {
       onMouseDown={handleDragStart}
       onMouseMove={handleMouseMove}
       onMouseUp={() => (isDragStart = false)}
-      className="my-8 flex items-center gap-4 overflow-x-hidden rounded-full"
+      className={twMerge(
+        "my-8 flex items-center gap-4 overflow-x-hidden rounded-full",
+        className
+      )}
     >
       {children}
     </div>

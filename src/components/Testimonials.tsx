@@ -59,11 +59,11 @@ function Testimonials() {
 
       {/* testimonial content ------------  */}
       <div className="flex flex-col items-center">
-        <p className="w-full sm:w-3/4 lg:w-[40%] font-medium text-center">
+        <p className="w-full sm:text-lg text-gray-600 sm:w-3/4 lg:w-[40%] font-medium text-center">
           {currentTestimonial.comment}
         </p>
 
-        <h4 className="mt-8 mb-4 text-md font-[600]">
+        <h4 className="mt-10 mb-4 text-lg font-[600]">
           {currentTestimonial.author}
         </h4>
         <div className="flex items-center gap-3 text-sm text-gray-600">
