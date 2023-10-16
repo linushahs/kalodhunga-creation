@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 import Logo from "../assets/Logo";
 
 type Menu = {
@@ -32,9 +33,22 @@ function Navbar() {
       className="relative navbar bg-white z-40 flex items-center justify-between text-black "
     >
       <div className="flex items-center justify-between w-full">
-        <Logo className="w-12 h-12 lg:w-14 lg:h-15" />
+        <motion.div
+          initial={{ y: "-100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 100, transition: { duration: 0.5 } }}
+        >
+          <Logo className="w-12 h-12 lg:w-14 lg:h-15" />
+        </motion.div>
         {/* right side  */}
-        <ul className="lg:flex items-center gap-12 hidden font-[500] text-lg 3xl:text-2xl">
+        <motion.ul
+          initial={{ y: "-100%", opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 100,
+            transition: { delay: 0.2, duration: 0.5 },
+          }}
+          className="lg:flex items-center gap-12 hidden font-[500] text-lg 3xl:text-2xl"
+        >
           <li>
             <a
               href="#home"
@@ -55,7 +69,7 @@ function Navbar() {
           <li>
             <a href="#projects">Projects</a>
           </li>
-        </ul>
+        </motion.ul>
 
         <button
           onClick={() => setIsMenuOpen(true)}

@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import PulseWave from "./assets/Pulsewave";
 import QuantumX from "./assets/QuantumX";
 import PixelForge from "./assets/PixelForge";
 import DataMinds from "./assets/DataMinds";
+import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
 const clientGroupStyle: string =
@@ -35,24 +38,50 @@ const clients = [
 function LandingPage() {
   return (
     <section className=" flex flex-col items-center w-full mx-auto border-b border-gray-200">
-      <h1 className="uppercase text-center py-4">
+      <motion.h1
+        initial={{ x: 100, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 100,
+          transition: { delay: 0.6, duration: 0.5 },
+        }}
+        className="uppercase text-center py-4"
+      >
         Innovación: Where Design <br /> Meets Code
-      </h1>
+      </motion.h1>
 
-      <p className="container my-6 text-center sm:w-[80%] md:w-[60%] xl:w-[600px] text-sm lg:text-md xl:text-lg text-gray-600 font-medium">
+      <motion.p
+        initial={{ x: -100, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 100,
+          transition: { delay: 0.8, duration: 0.5 },
+        }}
+        className="container my-6 text-center sm:w-[80%] md:w-[60%] xl:w-[600px] text-sm lg:text-md xl:text-lg text-gray-600 font-medium"
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eum
         soluta deleniti consectetur deserunt pariatur laudantium cumque unde,
         blanditiis quasi id. Quas necessitatibus
-      </p>
+      </motion.p>
 
-      <Image
-        src="/assets/laptop.png"
-        alt="laptop"
-        width={800}
-        height={100}
-        priority={true}
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{
+          scale: 1,
+          opacity: 100,
+          transition: { delay: 0.9, duration: 1 },
+        }}
         className="w-full sm:w-[80%] aspect-[16/9]"
-      />
+      >
+        <Image
+          src="/assets/laptop.png"
+          alt="laptop"
+          width={800}
+          height={100}
+          priority={true}
+          className="w-full h-full"
+        />
+      </motion.div>
 
       {/* CLient we have worked with (section)----- */}
       <div className="container">
