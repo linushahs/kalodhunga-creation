@@ -6,6 +6,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { testimonials } from "./utils/constants";
+import Image from "next/image";
 
 function Testimonials() {
   const [count, setCount] = useState(0);
@@ -68,7 +69,9 @@ function Testimonials() {
         </h4>
         <div className="flex items-center gap-3 text-sm text-gray-600">
           <p>{currentTestimonial.position}</p>
-          <img
+          <Image
+            width={120}
+            height={100}
             src={currentTestimonial.companyLogo}
             alt="company-logo"
             className="border-l border-black pl-3"
