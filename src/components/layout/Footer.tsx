@@ -1,4 +1,4 @@
-import Logo from "./assets/Logo";
+import Logo from "../assets/Logo";
 
 const linkGroup = "first:mr-8 flex flex-col gap-3";
 const linkHeadStyle = "font-medium text-xl";
