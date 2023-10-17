@@ -40,21 +40,21 @@ function NewServices() {
     <section id="services" className="container py-10 border-b border-gray-200">
       <h2 className="w-full border-b border-gray-500 pb-6">our services</h2>
 
-      <main className="grid grid-cols-5 gap-x-8 mt-8">
+      <main className="flex gap-x-8 mt-8">
         {services.map((service) => (
           <div
             key={service.title}
             className={twMerge(
-              "col-span-1 rounded-md h-[450px] bg-cover transition-all",
-              hoveredService === service.title && "col-span-2"
+              "w-1/4 rounded-md h-[450px] bg-cover transition-all duration-500",
+              hoveredService === service.title && "w-[550px]"
             )}
             style={{ backgroundImage: `url(${service.imgSrc})` }}
             onMouseOver={() => handleMouseOver(service.title)}
           >
             <div
               className={twMerge(
-                "h-full flex flex-col justify-end gap-2 p-12 text-white capitalize",
-                hoveredService !== service.title && "hidden"
+                "h-full hidden flex-col justify-end gap-2 p-12 text-white capitalize",
+                hoveredService === service.title && "flex"
               )}
             >
               <h3 className="font-medium text-3xl capitalize">
