@@ -4,16 +4,16 @@ import StartIcon from "./assets/StarIcon";
 const introductionPoints = [
   {
     id: 1,
-    title: "we are a design and development agency founded in 2006",
+    title: "We are a Software Development Company founded in 2020",
   },
   {
     id: 2,
     title:
-      "founded on 2005 , we are the best agency for design and developmment",
+      "Founded in 2020, We are the best company for software design and development",
   },
   {
     id: 3,
-    title: "founded by someone some founded by someone some",
+    title: "Founded by Sumit Yadav",
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ function Introduction() {
 
       <div className="flex flex-col gap-y-4 sm:gap-0 sm:flex-row justify-between mt-8 sm:mt-12 font-[500] text-md sm:text-xl">
         <span className="w-fit py-1 px-4 border border-gray-500 rounded-full">
-          Kathmandu, Nepal
+          Imadol-1, Lalitpur. Nepal
         </span>
         <span className="w-fit py-1 px-4 border border-gray-500 rounded-full">
           Kalodhunga Creations

@@ -21,7 +21,7 @@ export const menus: Menu[] = [
   "process",
   "contact",
 ].map((menu, idx) => {
-  return { id: idx + 1, title: menu.toUpperCase(), url: "/" + menu };
+  return { id: idx + 1, title: menu.toUpperCase(), url: "#" + menu };
 });
 
 function Navbar() {

@@ -47,7 +47,7 @@ function LandingPage() {
         }}
         className="uppercase text-center py-4"
       >
-        Innovación: Where Design <br /> Meets Code
+        TRANSFORMING IDEAS INTO <br /> REALITY
       </motion.h1>
 
       <motion.p
@@ -59,9 +59,8 @@ function LandingPage() {
         }}
         className="container my-6 text-center sm:w-[80%] md:w-[60%] xl:w-[600px] text-sm lg:text-md xl:text-lg text-gray-600 font-medium"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eum
-        soluta deleniti consectetur deserunt pariatur laudantium cumque unde,
-        blanditiis quasi id. Quas necessitatibus
+        We aspire to lead the way in innovative software development turning
+        every vision into a reality for businesses,regardless of their size.
       </motion.p>
 
       <motion.div

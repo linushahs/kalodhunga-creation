@@ -21,10 +21,9 @@ function Footer() {
             </div>
 
             <p className="w-full mt-4 lg:w-2/3 sm:mt-8  text-base text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Repellendus doloribus tempora nesciunt sint nam ea laudantium ex
-              perspiciatis cupiditate tempore quae molestias, eius odit. Fugit
-              ipsum atque quasi nulla molestiae.
+              Welcome to Kalodhunga Creation where innovation meets expertise.
+              We are a forward-thinking software company dedicated to
+              transforming ideas into powerful digital solutions.
             </p>
           </div>
 

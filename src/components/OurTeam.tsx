@@ -2,51 +2,7 @@
 
 import Image from "next/image";
 import HorizontalSlider from "./utils/HorizontalSlider";
-
-const teamInfo = [
-  {
-    id: 1,
-    name: "John Doe",
-    position: "ceo and manager",
-    imgSrc: "/assets/member-pic.png",
-  },
-  {
-    id: 2,
-    name: "John Doe",
-    position: "ceo and manager",
-    imgSrc: "/assets/member-pic.png",
-  },
-  {
-    id: 3,
-    name: "John Doe",
-    position: "ceo and manager",
-    imgSrc: "/assets/member-pic.png",
-  },
-  {
-    id: 4,
-    name: "John Doe",
-    position: "ceo and manager",
-    imgSrc: "/assets/member-pic.png",
-  },
-  {
-    id: 5,
-    name: "John Doe",
-    position: "ceo and manager",
-    imgSrc: "/assets/member-pic.png",
-  },
-  {
-    id: 6,
-    name: "John Doe",
-    position: "ceo and manager",
-    imgSrc: "/assets/member-pic.png",
-  },
-  {
-    id: 7,
-    name: "John Doe",
-    position: "ceo and manager",
-    imgSrc: "/assets/member-pic.png",
-  },
-];
+import { teamInfo } from "./utils/constants";
 
 function OurTeam() {
   return (
@@ -61,7 +17,7 @@ function OurTeam() {
               width={400}
               height={400}
               src={member.imgSrc}
-              className="w-[220px] sm:w-[280px] lg:w-[350px]"
+              className="w-[220px] sm:w-[280px] lg:w-[350px] aspect-[2/3] object-cover rounded-lg"
             />
 
             <h3 className="mt-3 text-lg sm:text-xl lg:text-2xl font-[600]">

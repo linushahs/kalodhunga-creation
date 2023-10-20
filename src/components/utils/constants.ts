@@ -33,6 +33,13 @@ type Testimonial = {
   companyLogo: string;
 };
 
+type TeamInfo = {
+  id: number;
+  name: string;
+  position: string;
+  imgSrc: string;
+};
+
 export const servicesCategory: Category[] = [
   {
     title: "Design",
@@ -138,6 +145,69 @@ export const workProcessPoints: WorkProcessPoint[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
     img: "/assets/process1.png",
+  },
+];
+
+export const teamInfo: TeamInfo[] = [
+  {
+    id: 1,
+    name: "Sumit Yadav",
+    position: "C.E.O. / Co-founder",
+    imgSrc: "/assets/member-pic.png",
+  },
+  {
+    id: 2,
+    name: "Prajwol Jung Kuwar",
+    position: "C.T.O",
+    imgSrc: "/assets/member-pic.png",
+  },
+  {
+    id: 3,
+    name: "Hritik Raj Karn",
+    position: "V.P.",
+    imgSrc: "/assets/member-pic.png",
+  },
+  {
+    id: 4,
+    name: "Ayusha Duwal",
+    position: "Human Resource",
+    imgSrc: "/assets/member-pic.png",
+  },
+  {
+    id: 5,
+    name: "Sharad Guragain",
+    position: "UI/UX designer",
+    imgSrc: "/assets/sharad_gn.jpg",
+  },
+  {
+    id: 6,
+    name: "Shivam Karn",
+    position: "Head Mobile developer",
+    imgSrc: "/assets/member-pic.png",
+  },
+  {
+    id: 7,
+    name: "Sunil Shah",
+    position: "Frontend Engineer",
+    imgSrc: "/assets/member-pic.png",
+  },
+  {
+    id: 8,
+    name: "Ravi Roshan Jha",
+    position: "Flutter Developer",
+    imgSrc: "/assets/member-pic.png",
+  },
+  {
+    id: 9,
+    name: "Bibek Gautam",
+    position: "Head backend developer",
+    imgSrc: "/assets/member-pic.png",
+  },
+  {
+    id: 10,
+    name: "Gaurav Thagunna",
+    position: "Data Analyst/ML Engineer",
+    imgSrc: "/assets/member-pic.png",
   },
 ];
 
