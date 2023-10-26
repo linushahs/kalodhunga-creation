@@ -1,10 +1,10 @@
 "use client";
 
 import { twMerge } from "tailwind-merge";
-import HorizontalSlider from "./utils/HorizontalSlider";
+import HorizontalSlider from "../utils/HorizontalSlider";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { servicesCategory } from "./utils/constants";
+import { servicesCategory } from "../utils/constants";
 
 function NewServices() {
   const [hoveredService, setHoveredService] = useState(

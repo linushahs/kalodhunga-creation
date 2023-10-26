@@ -7,12 +7,13 @@ import OurServices from "@/components/OurServices";
 import OurTeam from "@/components/OurTeam";
 import Testimonials from "@/components/Testimonials";
 import WorkingProcess from "@/components/WorkingProcess";
-import NewServices from "@/components/NewServices";
+import NewServices from "@/components/new/NewServices";
+import NewLandingPage from "@/components/new/NewLandingPage";
 
 export default function Home() {
   return (
     <main className="">
-      <LandingPage />
+      <NewLandingPage />
       <Introduction />
       <NewServices />
       <OurProjects />

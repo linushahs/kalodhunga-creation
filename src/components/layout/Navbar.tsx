@@ -63,11 +63,15 @@ function Navbar() {
           <li>
             <a href="#services">Services</a>
           </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+
           <li>
             <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#process">Process</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </motion.ul>
 
@@ -81,7 +85,10 @@ function Navbar() {
 
       {/* backdrop : black ----------- */}
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen z-20 bg-black/30"></div>
+        <div
+          onClick={() => setIsMenuOpen(false)}
+          className="fixed top-0 left-0 w-full h-screen z-20 bg-black/30"
+        ></div>
       )}
 
       {/* list of menus (in small devices: tab & mobile) ---->  */}
@@ -106,9 +113,15 @@ function Navbar() {
           {menus.map((menu) => (
             <li
               key={menu.id}
-              className="my-2.5 py-2 text-xl border-b-2 border-black font-medium flex justify-between items-center cursor-pointer hover:font-bold"
+              className="my-2.5 py-2 text-xl border-b-2 border-black font-medium  cursor-pointer "
             >
-              {menu.title} <ArrowRightIcon className="w-7 h-7" />
+              <a
+                href={menu.url}
+                onClick={() => setIsMenuOpen(false)}
+                className="flex justify-between items-center hover:font-bold"
+              >
+                {menu.title} <ArrowRightIcon className="w-7 h-7" />
+              </a>
             </li>
           ))}
         </ul>

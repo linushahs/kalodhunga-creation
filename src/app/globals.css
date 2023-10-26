@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   scroll-behavior: smooth;
+  /* outline: 1px solid red; */
 }
 
 .nav-menu {

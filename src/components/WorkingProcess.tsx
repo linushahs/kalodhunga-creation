@@ -10,7 +10,7 @@ function WorkingProcess() {
   );
 
   return (
-    <section className="container py-10 border-b border-gray-200">
+    <section id="process" className="container py-10 border-b border-gray-200">
       <header className="flex justify-between items-start">
         <h1 className="capitalize">
           understand our working <br />
@@ -41,7 +41,7 @@ function WorkingProcess() {
               className={twMerge(
                 "relative bg-no-repeat bg-cover text-gray-500 cursor-pointer rounded-xl z-20",
                 point.title === selectedPoint &&
-                  "p-6 sm:px-10 sm:py-12 flex flex-col justify-between h-[250px] sm:h-[300px] md:h-[400px] text-white transition-all"
+                  "p-6 sm:px-10 sm:py-12 flex flex-col justify-between h-[400px]  text-white transition-all"
               )}
             >
               {/* transparent background (black)  */}
@@ -60,7 +60,7 @@ function WorkingProcess() {
                 className={twMerge(
                   "hidden text-sm sm:text-base",
                   point.title === selectedPoint &&
-                    "block text-gray-200 sm:w-1/2"
+                    "block text-gray-200 w-full md:w-3/4  lg:w-1/2"
                 )}
               >
                 {point.description}

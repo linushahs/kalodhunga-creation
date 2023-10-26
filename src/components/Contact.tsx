@@ -2,7 +2,7 @@ import Image from "next/image";
 import { socials } from "./utils/constants";
 
 const textFieldStyle =
-  "bg-text-input w-full lg:w-[600px] py-4 px-4 rounded-lg text-base sm:text-[20px]";
+  "bg-text-input w-full xl:w-[600px] py-4 px-4 rounded-lg text-base sm:text-[20px]";
 const textLabelStyle = "capitalize  text-base sm:text-[20px] font-medium";
 const fieldGroupStyle = "flex flex-col gap-3";
 
@@ -54,7 +54,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="bg-submit-btn rounded-lg py-4 lg:py-5 text-center w-full lg:w-[600px] text-lg sm:text-xl font-[600] capitalize hover:bg-submit-btn/80"
+            className="bg-submit-btn rounded-lg py-4 lg:py-5 text-center w-full xl:w-[600px] text-lg sm:text-xl font-[600] capitalize hover:bg-submit-btn/80"
           >
             Send message
           </button>
