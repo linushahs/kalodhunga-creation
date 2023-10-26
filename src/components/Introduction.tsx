@@ -68,7 +68,7 @@ function Introduction() {
         <Image
           width={1000}
           height={200}
-          src="/assets/flower.png"
+          src="/assets/durbarsquare.png"
           alt="picture"
           className="hidden lg:block w-[320px] h-auto absolute right-0 bottom-[80px]"
         />
@@ -77,7 +77,7 @@ function Introduction() {
       <Image
         width={1000}
         height={200}
-        src="/assets/flower.png"
+        src="/assets/durbarsquare.png"
         alt="picture"
         className="lg:hidden w-full h-auto mt-8 sm:mt-8"
       />

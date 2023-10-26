@@ -32,7 +32,7 @@ function Navbar() {
       id="home"
       className="relative navbar bg-white z-40 flex items-center justify-between text-black "
     >
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full pb-4 border-b border-gray-200">
         <motion.div
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: 0, opacity: 100, transition: { duration: 0.5 } }}
@@ -47,13 +47,10 @@ function Navbar() {
             opacity: 100,
             transition: { delay: 0.2, duration: 0.5 },
           }}
-          className="lg:flex items-center gap-12 hidden font-[500] text-lg 3xl:text-2xl"
+          className="lg:flex items-center gap-12 hidden font-[500] lg:text-xl 3xl:text-2xl"
         >
           <li>
-            <a
-              href="#home"
-              className="underline decoration-wavy decoration-green"
-            >
+            <a href="#home" className="underline ">
               Home
             </a>
           </li>

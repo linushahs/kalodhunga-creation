@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
 @font-face {
   font-family: "SF Pro Regular";
   src: url("../fonts/SFPRODISPLAYREGULAR.OTF");
@@ -26,6 +28,11 @@
 * {
   scroll-behavior: smooth;
   font-family: "SF Pro Regular", sans-serif;
+}
+
+.idea-title {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
 }
 
 .nav-menu {
@@ -69,8 +76,8 @@
 
 @layer base {
   h1 {
-    font-family: "SF Pro Bold", sans-serif;
-    @apply uppercase text-[28px] leading-[34px] font-[600]  sm:text-[40px] sm:leading-[48px] lg:font-[500] lg:text-[4vw] lg:leading-[4vw];
+    font-family: "SF Pro Medium", sans-serif;
+    @apply uppercase text-[28px] leading-[34px]  sm:text-[40px] sm:leading-[48px]  lg:text-[7.5vw] lg:leading-[7.5vw];
   }
 
   h2 {
@@ -84,7 +91,7 @@
 
 @layer components {
   .navbar {
-    @apply w-full px-[15px] sm:px-[25px] py-[25px] lg:py-[30px] lg:px-[50px] 3xl:px-[80px] 3xl:py-[60px];
+    @apply w-full px-[15px] sm:px-[25px] py-[25px] lg:py-[20px] lg:px-[50px] 3xl:px-[80px] 3xl:py-[60px];
   }
 
   .container {
