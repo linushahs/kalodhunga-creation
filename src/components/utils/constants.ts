@@ -1,7 +1,7 @@
 type Service = {
-  name: string;
-  img_lg: string;
-  img_sm: string;
+  title: string;
+  description: string;
+  imgSrc: string;
 };
 
 type Category = {
@@ -45,24 +45,25 @@ export const servicesCategory: Category[] = [
     title: "Design",
     services: [
       {
-        name: "Web and mobile\ndesign",
-        img_lg: "/assets/design1_lg.png",
-        img_sm: "/assets/design1.png",
+        title: "web and app design",
+        description: "mobile and applicaion designing services",
+        imgSrc: "/assets/webdesign.jpeg",
+      },
+
+      {
+        title: "Graphics and logo design",
+        description: "mobile and applicaion designing services",
+        imgSrc: "/assets/graphicsdesign.jpeg",
       },
       {
-        name: "Graphics and logo\ndesign",
-        img_lg: "/assets/design2_lg.png",
-        img_sm: "/assets/design2.png",
+        title: "Banner and poster design",
+        description: "mobile and applicaion designing services",
+        imgSrc: "/assets/servicepic-3.png",
       },
       {
-        name: "banner and poster\ndesign",
-        img_lg: "/assets/design3_lg.png",
-        img_sm: "/assets/design3.png",
-      },
-      {
-        name: "social media and\n3d model",
-        img_lg: "/assets/design4_lg.png",
-        img_sm: "/assets/design4.png",
+        title: "Social media and 3d model",
+        description: "mobile and applicaion designing services",
+        imgSrc: "/assets/servicepic-4.png",
       },
     ],
   },
@@ -125,26 +126,26 @@ export const workProcessPoints: WorkProcessPoint[] = [
   {
     title: "Define Objectives and Scope",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
-    img: "/assets/process1.png",
+      "At kalodhunga Creation, our software development process begins with a clear understanding of your objectives and the scope of your project. We collaborate closely with you to define the goals, functionalities, and desired outcomes. By gaining a deep insight into your vision, we lay the foundation for a successful partnership. Your objectives become our guiding star, leading us towards creating innovative and tailored software solutions that precisely align with your business needs.",
+    img: "/assets/objective.jpg",
   },
   {
     title: "Plan and Strategize",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
-    img: "/assets/process1.png",
+      "Once we perceive your objectives, our experienced team of strategists and developers precisely plan every step of the software development journey. We design a comprehensive roadmap that outlines the development stages, technology stack, and project timelines. Our strategic approach involves identifying potential challenges and designing effective solutions to ensure a seamless development process. We believe in transparency and keep you informed at every stage, ensuring that our strategy aligns perfectly with your expectations.",
+    img: "/assets/plan.jpg",
   },
   {
     title: "Execute and implement",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
-    img: "/assets/process1.png",
+      "With a robust strategy in place, our skilled development team swings into action. We execute the planned phases of development with precision and expertise. Using cutting-edge technologies and agile methodologies, we transform concepts into functional, user-friendly software applications. Our developers work collaboratively, adhering to best coding practices, industry standards, and quality benchmarks. We take pride in delivering high-quality, scalable, and secure software solutions that exceed your expectations. Timely delivery and flawless execution are our hallmarks.",
+    img: "/assets/execute.jpg",
   },
   {
     title: "monitor and evaluate",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
-    img: "/assets/process1.png",
+      "Our commitment to excellence doesn't end with the deployment of your software. We understand the importance of continuous improvement and monitoring. Our team conducts precise testing, quality assurance, and performance evaluations to ensure your software operates seamlessly in real-world scenarios. We proactively identify and address any issues, making sure your software functions optimally. Moreover, we provide ongoing support and maintenance services, keeping your software up-to-date and resilient to evolving challenges.",
+    img: "/assets/monitor&evaluate.jpg",
   },
 ];
 

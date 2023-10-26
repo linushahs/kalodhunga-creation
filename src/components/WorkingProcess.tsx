@@ -39,11 +39,19 @@ function WorkingProcess() {
                   point.title === selectedPoint ? `url(${point.img})` : "none",
               }}
               className={twMerge(
-                "bg-no-repeat bg-cover text-gray-500 cursor-pointer rounded-xl",
+                "relative bg-no-repeat bg-cover text-gray-500 cursor-pointer rounded-xl z-20",
                 point.title === selectedPoint &&
                   "p-6 sm:px-10 sm:py-12 flex flex-col justify-between h-[250px] sm:h-[300px] md:h-[400px] text-white transition-all"
               )}
             >
+              {/* transparent background (black)  */}
+              <div
+                className={twMerge(
+                  "absolute top-0 left-0 w-full h-full hidden bg-black/40 rounded-xl -z-10",
+                  point.title === selectedPoint && "block"
+                )}
+              ></div>
+
               <h3 className="text-lg sm:text-xl lg:text-[22px] capitalize">
                 0{id + 1}{" "}
                 <span className="ml-3 font-medium">{point.title}</span>
@@ -52,7 +60,7 @@ function WorkingProcess() {
                 className={twMerge(
                   "hidden text-sm sm:text-base",
                   point.title === selectedPoint &&
-                    "block text-gray-400 sm:w-1/2"
+                    "block text-gray-200 sm:w-1/2"
                 )}
               >
                 {point.description}
