@@ -7,17 +7,15 @@ import { motion } from "framer-motion";
 import { servicesCategory } from "../utils/constants";
 
 function NewServices() {
-  const [hoveredService, setHoveredService] = useState(
-    servicesCategory[0].title
-  );
+  const [hoveredService, setHoveredService] = useState(0);
 
   const variants = {
     visible: { opacity: 1, y: 0, transition: { delay: 0.2 } },
     hidden: { opacity: 0, y: 50 },
   };
 
-  const handleMouseOver = (title: string) => {
-    setHoveredService(title);
+  const handleMouseOver = (id: number) => {
+    setHoveredService(id);
   };
 
   return (
@@ -25,24 +23,24 @@ function NewServices() {
       <h2 className="w-full border-b border-gray-500 pb-6">our services</h2>
 
       <main className="flex gap-x-8 mt-8">
-        {servicesCategory[0].services?.map((service) => (
+        {servicesCategory[0].services?.map((service, idx) => (
           <motion.div
             layout
             key={service.title}
             className={twMerge(
               "w-1/4 overflow-hidden rounded-md h-[450px] bg-cover transition-all duration-500 bg-center",
-              hoveredService === service.title && "w-[550px] "
+              hoveredService === idx && "w-[550px] "
             )}
             style={{ backgroundImage: `url(${service.imgSrc})` }}
-            onMouseOver={() => handleMouseOver(service.title)}
+            onMouseOver={() => handleMouseOver(idx)}
           >
             <motion.div
               initial="hidden"
-              animate={`${hoveredService === service.title && "visible"}`}
+              animate={`${hoveredService === idx && "visible"}`}
               variants={variants}
               className={twMerge(
                 "w-[450px] h-full hidden flex-col justify-end gap-2 p-12 text-white capitalize",
-                hoveredService === service.title && "flex "
+                hoveredService === idx && "flex "
               )}
             >
               <h3 className="font-medium text-3xl capitalize">

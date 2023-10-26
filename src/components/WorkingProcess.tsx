@@ -58,7 +58,7 @@ function WorkingProcess() {
               </h3>
               <p
                 className={twMerge(
-                  "hidden text-sm sm:text-base",
+                  "hidden text-md sm:text-lg",
                   point.title === selectedPoint &&
                     "block text-gray-200 w-full md:w-3/4  lg:w-1/2"
                 )}

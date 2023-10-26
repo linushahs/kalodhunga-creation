@@ -41,7 +41,7 @@ function Introduction() {
           ].map((title, id) => (
             <h3
               key={id}
-              className="flex items-center lg:inline-block capitalize font-[500] sm:font-[600] border-b sm:last:border-0 border-black first:pt-0 py-2 lg:border-0 lg:p-0"
+              className="flex sm:text-lg items-center lg:inline-block capitalize font-semibold border-b sm:last:border-0 border-black first:pt-0 py-2 lg:border-0 lg:p-0"
             >
               <StartIcon className="lg:hidden mr-3" />
               {title}

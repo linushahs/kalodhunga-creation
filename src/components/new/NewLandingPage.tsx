@@ -84,7 +84,7 @@ function NewLandingPage() {
       </motion.div>
 
       {/* CLient we have worked with (section)----- */}
-      <div className="container">
+      <div>
         <h3 className="mt-16 text-center font-medium capitalize text-[20px] lg:text-[24px]  3xl:text-[48px]">
           Clients we have worked with
         </h3>

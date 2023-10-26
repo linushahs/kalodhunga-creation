@@ -1,12 +1,32 @@
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Poppins({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500"],
-});
+// const SFPro = localFont({
+//   src: [
+//     {
+//       path: "@/fonts/SFPRODISPLAYREGULAR.OTF",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "@/fonts/SFPRODISPLAYLIGHTITALIC.OTF",
+//       weight: "400",
+//       style: "italic",
+//     },
+//     {
+//       path: "@/fonts/SFPRODISPLAYBOLD.OTF",
+//       weight: "700",
+//       style: "normal",
+//     },
+//     {
+//       path: "@/fonts/SFPRODISPLAYHEAVYITALIC.OTF",
+//       weight: "700",
+//       style: "italic",
+//     },
+//   ],
+// });
 
 export const metadata: Metadata = {
   title: "Kalodhunga Creation",
@@ -19,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Navbar />
         {children}
       </body>
