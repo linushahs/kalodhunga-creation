@@ -21,7 +21,7 @@ function Footer() {
             </div>
 
             <p className="w-full mt-4 lg:w-2/3 sm:mt-8  text-base text-gray-500">
-              Partner with us, and let's innovate together. By choosing
+              Partner with us, and let&apos;s innovate together. By choosing
               Kalodhunga Creation, you are not just getting a software
               development partner, you are gaining a dedicated team that is
               passionate about turning your ideas into powerful, functional and
