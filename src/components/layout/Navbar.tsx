@@ -30,9 +30,9 @@ function Navbar() {
   return (
     <nav
       id="home"
-      className="relative navbar bg-white z-40 flex items-center justify-between text-black "
+      className="relative container navbar z-40 flex items-center justify-between text-black "
     >
-      <div className="flex items-center justify-between w-full pb-4 border-b border-gray-200">
+      <div className="flex items-center justify-between w-full pb-4 border-b border-gray-300">
         <motion.div
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: 0, opacity: 100, transition: { duration: 0.5 } }}

@@ -91,11 +91,11 @@
 
 @layer components {
   .navbar {
-    @apply w-full px-[15px] sm:px-[25px] py-[25px] lg:py-[20px] lg:px-[50px] 3xl:px-[80px] 3xl:py-[60px];
+    @apply w-full h-[60px] pt-10;
   }
 
   .container {
-    @apply w-full px-[15px] sm:px-[25px] lg:px-[50px] 3xl:px-[80px];
+    @apply w-full bg-white px-[15px] sm:px-[25px] lg:px-[40px] 3xl:px-[80px];
   }
 
   .service-text {

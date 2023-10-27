@@ -2,7 +2,7 @@ import Image from "next/image";
 import { socials } from "./utils/constants";
 
 const textFieldStyle =
-  "bg-text-input w-full xl:w-[600px] py-4 px-4 rounded-lg text-base sm:text-[20px]";
+  "bg-white w-full xl:w-[600px] py-4 px-4 rounded-lg text-base sm:text-[20px]";
 const textLabelStyle = "capitalize  text-base sm:text-[20px] font-medium";
 const fieldGroupStyle = "flex flex-col gap-3";
 
