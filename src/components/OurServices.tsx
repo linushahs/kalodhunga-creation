@@ -34,13 +34,13 @@ function OurServices() {
       <ul className="pt-0 sm:pt-6 grid grid-cols-1 gap-y-8 lg:grid-cols-4 lg:gap-x-[100px]">
         {servicesCategory[0].services?.map((service) => (
           <li
-            key={service.name}
+            key={service.title}
             className="relative rounded-lg h-[120px] sm:h-[200px] lg:h-[700px] xl:h-[800px] bg-no-repeat bg-cover bg-center"
           >
             <Image
               width={1000}
               height={1000}
-              src={service.img_lg}
+              src={service.imgSrc}
               alt="picture"
               className="hidden lg:block h-full min-w-auto absolute top-0 left-0 -z-20  rounded-lg"
             />
@@ -48,16 +48,16 @@ function OurServices() {
             <Image
               width={1000}
               height={1000}
-              src={service.img_sm}
+              src={service.imgSrc}
               alt="picture"
               className="block lg:hidden h-full w-full object-cover absolute top-0 left-0 -z-20  rounded-lg"
             />
 
             <div className="absolute left-6 sm:left-12 lg:bottom-16 h-full flex items-center lg:justify-center lg:items-end">
               <h3 className="service-text ">
-                {service.name.split("\n")[0]}
+                {service.title.split("\n")[0]}
                 <br />
-                {service.name.split("\n")[1]}
+                {service.title.split("\n")[1]}
               </h3>
             </div>
           </li>
