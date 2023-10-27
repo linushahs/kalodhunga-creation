@@ -13,7 +13,7 @@ function NewLandingPage() {
   useLayoutEffect(() => {
     gsap.to(imgRef.current, {
       y: -400,
-      duration: 1,
+      duration: 2,
       scrollTrigger: {
         trigger: imgRef.current,
         start: 0,
@@ -23,7 +23,7 @@ function NewLandingPage() {
 
     gsap.to(imgRef.current, {
       scale: 3.2,
-      duration: 3,
+      duration: 5,
       scrollTrigger: {
         trigger: imgRef.current,
         start: 0,
@@ -35,7 +35,7 @@ function NewLandingPage() {
 
     gsap.to(imgRef.current, {
       opacity: 0,
-      delay: 4,
+      delay: 8,
       duration: 1,
       scrollTrigger: {
         trigger: imgRef.current,
@@ -82,7 +82,7 @@ function NewLandingPage() {
         width={1000}
         height={800}
         priority={true}
-        className="w-1/3 absolute -bottom-[38%] left-1/2 -translate-x-1/2 aspect-[16/9]"
+        className="w-1/3 absolute -bottom-[34%] left-1/2 -translate-x-1/2 aspect-[16/9]"
       />
     </section>
   );
