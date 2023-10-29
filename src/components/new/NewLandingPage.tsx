@@ -3,54 +3,29 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+import Navbar from "../layout/Navbar";
+import { introAnimation } from "../utils/animations";
 gsap.registerPlugin(ScrollTrigger);
 
 function NewLandingPage() {
   const containerRef = useRef<any>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
 
-  useLayoutEffect(() => {
-    gsap.to(imgRef.current, {
-      y: -400,
-      duration: 2,
-      scrollTrigger: {
-        trigger: imgRef.current,
-        start: 0,
-        scrub: 2,
-      },
-    });
+  useEffect(() => {
+    const tl = gsap.timeline();
 
-    gsap.to(imgRef.current, {
-      scale: 3.2,
-      duration: 5,
-      scrollTrigger: {
-        trigger: imgRef.current,
-        start: 0,
-        end: "top top",
-        scrub: 2,
-        markers: true,
-      },
-    });
-
-    gsap.to(imgRef.current, {
-      opacity: 0,
-      delay: 8,
-      duration: 1,
-      scrollTrigger: {
-        trigger: imgRef.current,
-        start: "top -10%",
-        scrub: 2,
-      },
-    });
+    tl.add(introAnimation(imgRef, containerRef));
   }, []);
 
   return (
     <section
       ref={containerRef}
-      className="fixed top-0 left-0 container h-screen flex flex-col w-full mx-auto border-b border-gray-200 pt-8 z-50"
+      className="fixed top-0 left-0 h-screen container flex flex-col w-full mx-auto border-b border-gray-200  z-10"
     >
-      <h1 className="uppercase pt-4">TRANSFORMING</h1>
+      <Navbar />
+
+      <h1 className="uppercase pt-10">TRANSFORMING</h1>
       <h1 className="text-center mt-4">
         <span className="idea-title">IDEAS</span> INTO
       </h1>
@@ -82,7 +57,7 @@ function NewLandingPage() {
         width={1000}
         height={800}
         priority={true}
-        className="w-1/3 absolute -bottom-[34%] left-1/2 -translate-x-1/2 aspect-[16/9]"
+        className="w-1/3 absolute top-[90%] left-1/2 -translate-x-1/2 aspect-[16/9]"
       />
     </section>
   );

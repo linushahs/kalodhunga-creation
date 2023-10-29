@@ -1,3 +1,5 @@
+"use client";
+
 import Contact from "@/components/Contact";
 import Introduction from "@/components/Introduction";
 import OurProjects from "@/components/OurProjects";
@@ -10,16 +12,23 @@ import NewServices from "@/components/new/NewServices";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <NewLandingPage />
-      <Introduction />
-      <NewServices />
-      <OurProjects />
-      <WorkingProcess />
-      <Contact />
-      <OurTeam />
-      <Testimonials />
-      <Footer />
+      <div className="h-screen w-full"></div>
+      <div className="h-screen w-full"></div>
+      <div className="h-screen w-full"></div>
+      <div className="h-[90vh] w-full"></div>
+
+      <section>
+        <Introduction />
+        <NewServices />
+        <OurProjects />
+        <WorkingProcess />
+        <Contact />
+        <OurTeam />
+        <Testimonials />
+        <Footer />
+      </section>
     </main>
   );
 }

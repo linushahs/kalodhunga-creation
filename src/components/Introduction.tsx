@@ -13,7 +13,7 @@ const introductionPoints = [
   },
   {
     id: 3,
-    title: "Founded by Sumit Yadav",
+    title: "Founded by the team of creative minds",
   },
   {
     id: 4,

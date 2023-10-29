@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <nav
       id="home"
-      className="relative container navbar z-40 flex items-center justify-between text-black "
+      className="navbar flex items-center justify-between text-black "
     >
       <div className="flex items-center justify-between w-full pb-4 border-b border-gray-300">
         <motion.div
@@ -91,7 +91,7 @@ function Navbar() {
       {/* list of menus (in small devices: tab & mobile) ---->  */}
       <div
         className={twMerge(
-          "nav-menu top-0 right-0 fixed h-full w-[92%] sm:h-[600px] sm:w-[400px] sm:top-[75px] sm:right-8 bg-white flex flex-col justify-between z-30",
+          "nav-menu top-0 right-0 fixed h-full w-[92%] sm:h-[600px] sm:w-[400px] sm:top-[75px] sm:right-8 bg-white flex flex-col justify-between z-50",
           isMenuOpen && "active"
         )}
       >
