@@ -1,7 +1,6 @@
-import Navbar from "@/components/layout/Navbar";
-import "./globals.css";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import "./globals.css";
+import "./locomotive-scroll.css";
 
 // const SFPro = localFont({
 //   src: [

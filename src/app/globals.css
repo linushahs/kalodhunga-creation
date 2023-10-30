@@ -30,6 +30,19 @@
   font-family: "SF Pro Regular", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #e2e2e2;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border-radius: 40px;
+}
+
 .idea-title {
   font-family: "DM Serif Display", serif;
   font-weight: bold;

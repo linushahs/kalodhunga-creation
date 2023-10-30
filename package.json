@@ -12,10 +12,12 @@
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
+    "locomotive-scroll": "^4.1.4",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.1",
+    "react-locomotive-scroll": "^0.2.2",
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {

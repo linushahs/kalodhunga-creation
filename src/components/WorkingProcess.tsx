@@ -10,7 +10,7 @@ function WorkingProcess() {
   );
 
   return (
-    <section id="process" className="container py-10">
+    <section data-scroll-section id="process" className="container py-10">
       <header className="flex justify-between items-start">
         <h1 className="capitalize">
           understand our working <br />

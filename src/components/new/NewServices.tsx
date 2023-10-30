@@ -19,7 +19,7 @@ function NewServices() {
   };
 
   return (
-    <section id="services" className="container py-10 ">
+    <section data-scroll-section id="services" className="container py-10 ">
       <h2 className="w-full border-b border-gray-500 pb-6">our services</h2>
 
       <main className="flex gap-x-8 mt-8">

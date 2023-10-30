@@ -6,7 +6,7 @@ import { teamInfo } from "./utils/constants";
 
 function OurTeam() {
   return (
-    <section className="container py-10">
+    <section data-scroll-section className="container py-10">
       <h2>our team</h2>
 
       <HorizontalSlider className="mt-12 sm:mt-16 items-start rounded-none gap-x-10 sm:gap-x-12 lg:gap-x-20">

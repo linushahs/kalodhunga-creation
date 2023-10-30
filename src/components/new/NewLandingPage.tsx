@@ -8,7 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 function NewLandingPage() {
   return (
-    <section className=" h-screen container flex flex-col w-full mx-auto   z-10">
+    <section
+      data-scroll-section
+      className="relative h-screen container flex flex-col w-full mx-auto   z-10"
+    >
       <Navbar />
 
       <p className="uppercase pt-10 landing-title">TRANSFORMING</p>
