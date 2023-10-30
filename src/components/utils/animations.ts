@@ -12,7 +12,7 @@ export const introAnimation = (
       trigger: imgRef?.current,
       start: 0,
       end: "1800 0",
-      scrub: 4,
+      scrub: 3,
       markers: true,
     },
   });
@@ -21,24 +21,12 @@ export const introAnimation = (
     y: -100,
     duration: 4,
     ease: "power1.inOut",
-  })
-    .to(imgRef.current, {
-      scale: 5.1,
-      duration: 10,
-      ease: "power1.inOut",
-    })
-    .to(imgRef.current, {
-      opacity: 0,
-      duration: 4,
-    })
-    .to(
-      containerRef.current,
-      {
-        opacity: 0,
-        duration: 4,
-      },
-      "-=4"
-    );
+  }).to(imgRef.current, {
+    scaleX: 3.2,
+    scaleY: 5.2,
+    duration: 10,
+    ease: "power1.inOut",
+  });
 
   return tl;
 };

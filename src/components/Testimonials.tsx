@@ -29,7 +29,7 @@ function Testimonials() {
   };
 
   return (
-    <section className="container py-10 border-b border-gray-200 flex items-center flex-col ">
+    <section className="container py-10  flex items-center flex-col ">
       <header className="w-full relative flex justify-center items-start">
         <h1 className=" capitalize text-center">
           your projects are in <br />

@@ -14,21 +14,14 @@ export default function Home() {
   return (
     <main>
       <NewLandingPage />
-      <div className="h-screen w-full"></div>
-      <div className="h-screen w-full"></div>
-      <div className="h-screen w-full"></div>
-      <div className="h-[90vh] w-full"></div>
-
-      <section>
-        <Introduction />
-        <NewServices />
-        <OurProjects />
-        <WorkingProcess />
-        <Contact />
-        <OurTeam />
-        <Testimonials />
-        <Footer />
-      </section>
+      <Introduction />
+      <NewServices />
+      <OurProjects />
+      <WorkingProcess />
+      <Contact />
+      <OurTeam />
+      <Testimonials />
+      <Footer />
     </main>
   );
 }

@@ -183,8 +183,8 @@ export const teamInfo: TeamInfo[] = [
   {
     id: 6,
     name: "Shivam Karn",
-    position: "Head Mobile developer",
-    imgSrc: "/assets/member-pic.png",
+    position: "Lead Mobile developer",
+    imgSrc: "/assets/shiwam_karn.jpg",
   },
   {
     id: 7,

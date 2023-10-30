@@ -2,7 +2,7 @@ import Image from "next/image";
 import { socials } from "./utils/constants";
 
 const textFieldStyle =
-  "bg-white w-full xl:w-[600px] py-4 px-4 rounded-lg text-base sm:text-[20px]";
+  "bg-[#fff] w-full xl:w-[600px] py-4 px-4 rounded-lg text-base sm:text-[20px]";
 const textLabelStyle = "capitalize  text-base sm:text-[20px] font-medium";
 const fieldGroupStyle = "flex flex-col gap-3";
 
@@ -11,7 +11,7 @@ const headingStyle = "text-[21px] sm:text-[26px] font-[600] capitalize";
 
 function Contact() {
   return (
-    <section id="contact" className="container py-10 border-b border-gray-200">
+    <section id="contact" className="container py-10 ">
       <header className="flex justify-between items-start">
         <h1 className="capitalize">
           get in touch, let&apos;s <br />

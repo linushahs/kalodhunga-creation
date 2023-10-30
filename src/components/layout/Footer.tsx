@@ -7,7 +7,7 @@ const linkStyle =
 
 function Footer() {
   return (
-    <section className="container py-10  ">
+    <section className="container py-10 border-0 ">
       <div className="border-b lg:border-0 border-gray-300  flex flex-col-reverse gap-y-10 lg:flex-row lg:pb-6">
         {/* left side--- > */}
         <div className="flex-1 pb-4 sm:pb-8 lg:pb-0 flex flex-col sm:flex-row sm:gap-8">

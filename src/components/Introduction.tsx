@@ -27,7 +27,7 @@ const introductionPoints = [
 
 function Introduction() {
   return (
-    <section id="about" className="container py-10 border-b border-gray-200">
+    <section id="about" className="container py-10 ">
       <div className="flex flex-col sm:border-b sm:border-black lg:border-0 sm:flex-row justify-between items-start lg:flex-col">
         <h2 className="w-full border-b border-black pb-2 sm:w-fit sm:border-0 sm:p-0">
           Introduction

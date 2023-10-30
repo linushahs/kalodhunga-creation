@@ -6,7 +6,7 @@ import { teamInfo } from "./utils/constants";
 
 function OurTeam() {
   return (
-    <section className="container py-10 border-b border-gray-200 ">
+    <section className="container py-10">
       <h2>our team</h2>
 
       <HorizontalSlider className="mt-12 sm:mt-16 items-start rounded-none gap-x-10 sm:gap-x-12 lg:gap-x-20">
@@ -23,7 +23,7 @@ function OurTeam() {
             <h3 className="mt-3 text-lg sm:text-xl lg:text-2xl font-[600]">
               {member.name}
             </h3>
-            <p className="capitalize text-xs sm:text-sm mt-1 text-gray-600 ">
+            <p className="capitalize text-xs sm:text-lg mt-1 text-gray-600 ">
               {member.position}
             </p>
           </div>

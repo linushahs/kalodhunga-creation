@@ -3,32 +3,18 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
 import Navbar from "../layout/Navbar";
-import { introAnimation } from "../utils/animations";
 gsap.registerPlugin(ScrollTrigger);
 
 function NewLandingPage() {
-  const containerRef = useRef<any>(null);
-  const imgRef = useRef<HTMLImageElement | null>(null);
-
-  useEffect(() => {
-    const tl = gsap.timeline();
-
-    tl.add(introAnimation(imgRef, containerRef));
-  }, []);
-
   return (
-    <section
-      ref={containerRef}
-      className="fixed top-0 left-0 h-screen container flex flex-col w-full mx-auto border-b border-gray-200  z-10"
-    >
+    <section className=" h-screen container flex flex-col w-full mx-auto   z-10">
       <Navbar />
 
-      <h1 className="uppercase pt-10">TRANSFORMING</h1>
-      <h1 className="text-center mt-4">
+      <p className="uppercase pt-10 landing-title">TRANSFORMING</p>
+      <p className="landing-title text-center mt-4">
         <span className="idea-title">IDEAS</span> INTO
-      </h1>
+      </p>
 
       <div className="flex justify-between">
         <div>
@@ -42,23 +28,22 @@ function NewLandingPage() {
             Get started now
           </button>
         </div>
-        <h1 className="text-right mt-4">REALITY</h1>
+        <p className="landing-title text-right mt-4">REALITY</p>
       </div>
 
-      <div className="container w-full absolute bottom-5 left-0 flex justify-between text-lg text-gray-600">
+      <div className="container border-0 w-full absolute bottom-5 left-0 flex justify-between text-xl text-gray-600">
         <h4>2022</h4>
         <h4>Kalodhunga Creations</h4>
       </div>
 
-      <Image
-        ref={imgRef}
+      {/* <Image
         src="/assets/landing-pic.png"
         alt="landing thumbnail"
         width={1000}
         height={800}
         priority={true}
         className="w-1/3 absolute top-[90%] left-1/2 -translate-x-1/2 aspect-[16/9]"
-      />
+      /> */}
     </section>
   );
 }
