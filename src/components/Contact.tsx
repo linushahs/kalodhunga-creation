@@ -12,15 +12,10 @@ const headingStyle = "text-[21px] sm:text-[26px] font-[600] capitalize";
 function Contact() {
   return (
     <section data-scroll-section id="contact" className="container py-10 ">
-      <header className="flex justify-between items-start">
-        <h1 className="capitalize">
-          get in touch, let&apos;s <br />
-          create magic together
-        </h1>
-        <span className="hidden sm:block mt-6 py-1 px-2.5 sm:px-3.5 font-bold text-[9px] sm:text-xs border border-black rounded-full">
-          07
-        </span>
-      </header>
+      <h1>
+        get in touch, let&apos;s <br />
+        create magic together
+      </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 mt-12 border-b border-black pb-8">
         <Image

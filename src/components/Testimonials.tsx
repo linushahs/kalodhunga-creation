@@ -33,15 +33,10 @@ function Testimonials() {
       data-scroll-section
       className="container py-10  flex items-center flex-col "
     >
-      <header className="w-full relative flex justify-center items-start">
-        <h1 className=" capitalize text-center">
-          your projects are in <br />
-          safe hands
-        </h1>
-        <span className=" hidden sm:block absolute right-0 mt-6 py-1 px-2.5 sm:px-3.5 font-bold text-[9px] sm:text-xs border border-black rounded-full">
-          06
-        </span>
-      </header>
+      <h1 className=" text-center">
+        your projects are in <br />
+        safe hands
+      </h1>
 
       {/* description/sub text --------- */}
       <p className=" text-center w-full sm:w-3/4 lg:w-1/3 mx-auto mt-8 mb-6 text-gray-500  text-sm sm:text-md leading-[24px]">

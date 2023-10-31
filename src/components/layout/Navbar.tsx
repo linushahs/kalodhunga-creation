@@ -37,7 +37,7 @@ function Navbar() {
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: 0, opacity: 100, transition: { duration: 0.5 } }}
         >
-          <Logo className="w-12 h-12 lg:w-14 lg:h-15" />
+          <Logo className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-15" />
         </motion.div>
         {/* right side  */}
         <motion.ul

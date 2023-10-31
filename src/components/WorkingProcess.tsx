@@ -11,15 +11,10 @@ function WorkingProcess() {
 
   return (
     <section data-scroll-section id="process" className="container py-10">
-      <header className="flex justify-between items-start">
-        <h1 className="capitalize">
-          understand our working <br />
-          process
-        </h1>
-        <span className="hidden sm:block mt-6 py-1 px-2.5 sm:px-3.5 font-bold text-[9px] sm:text-xs border border-black rounded-full">
-          07
-        </span>
-      </header>
+      <h1>
+        understand our working <br />
+        process
+      </h1>
 
       <ul className="mt-12">
         {workProcessPoints.map((point, id) => (
