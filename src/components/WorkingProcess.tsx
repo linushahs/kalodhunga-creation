@@ -41,7 +41,7 @@ function WorkingProcess() {
               className={twMerge(
                 "relative bg-no-repeat bg-cover text-gray-500 cursor-pointer rounded-xl z-20",
                 point.title === selectedPoint &&
-                  "p-6 sm:px-10 sm:py-12 flex flex-col justify-between h-[400px]  text-white transition-all"
+                  "p-6 sm:px-10 sm:py-12 flex flex-col justify-between h-[380px] sm:h-[400px] text-white transition-all"
               )}
             >
               {/* transparent background (black)  */}
@@ -52,13 +52,12 @@ function WorkingProcess() {
                 )}
               ></div>
 
-              <h3 className="text-lg sm:text-xl lg:text-[22px] capitalize">
-                0{id + 1}{" "}
-                <span className="ml-3 font-medium">{point.title}</span>
+              <h3 className="font-bold tracking-wider text-[18px] sm:text-2xl lg:text-[22px] capitalize">
+                0{id + 1} <span className="ml-3 ">{point.title}</span>
               </h3>
               <p
                 className={twMerge(
-                  "hidden text-md sm:text-lg",
+                  "hidden text-[15px] sm:text-lg",
                   point.title === selectedPoint &&
                     "block text-gray-200 w-full md:w-3/4  lg:w-1/2"
                 )}

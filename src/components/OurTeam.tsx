@@ -23,7 +23,7 @@ function OurTeam() {
             <h3 className="mt-3 text-lg sm:text-xl lg:text-2xl font-[600]">
               {member.name}
             </h3>
-            <p className="capitalize text-xs sm:text-lg mt-1 text-gray-600 ">
+            <p className="capitalize text-sm sm:text-lg mt-1 text-gray-600 ">
               {member.position}
             </p>
           </div>

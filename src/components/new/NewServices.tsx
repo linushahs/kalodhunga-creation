@@ -2,9 +2,16 @@
 
 import { twMerge } from "tailwind-merge";
 import HorizontalSlider from "../utils/HorizontalSlider";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { servicesCategory } from "../utils/constants";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Pagination } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
 function NewServices() {
   const [hoveredService, setHoveredService] = useState(0);
@@ -22,7 +29,7 @@ function NewServices() {
     <section data-scroll-section id="services" className="container py-10 ">
       <h2 className="w-full border-b border-gray-500 pb-6">our services</h2>
 
-      <main className="flex gap-x-8 mt-8">
+      <main className="hidden lg:flex gap-x-8 mt-8">
         {servicesCategory[0].services?.map((service, idx) => (
           <motion.div
             layout
@@ -39,7 +46,7 @@ function NewServices() {
               animate={`${hoveredService === idx && "visible"}`}
               variants={variants}
               className={twMerge(
-                "w-[450px] h-full hidden flex-col justify-end gap-2 p-12 text-white capitalize",
+                "xl:w-[450px] h-full hidden flex-col justify-end gap-2 p-12 text-white capitalize",
                 hoveredService === idx && "flex "
               )}
             >
@@ -53,6 +60,53 @@ function NewServices() {
             </motion.div>
           </motion.div>
         ))}
+      </main>
+
+      <main className="lg:hidden mt-8">
+        <Swiper
+          slidesPerView={"auto"}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+          }}
+          spaceBetween={15}
+          grabCursor={true}
+          freeMode={true}
+          modules={[FreeMode]}
+          className="w-full h-[300px] sm:h-[450px]"
+        >
+          {servicesCategory[0].services?.map((service) => (
+            <SwiperSlide
+              key={service.title}
+              className={twMerge(
+                " relative overflow-hidden rounded-md h-[450px] bg-cover transition-all duration-500 bg-center z-30"
+              )}
+              style={{ backgroundImage: `url(${service.imgSrc})` }}
+            >
+              {/* black background ----  */}
+              <div className="w-full h-full absolute top-0 left-0 bg-black/40 -z-10"></div>
+
+              <div
+                className={twMerge(
+                  " h-full flex flex-col justify-end gap-3 p-6 text-white capitalize"
+                )}
+              >
+                <h3 className="font-medium text-2xl capitalize">
+                  {service.title}
+                </h3>
+                <p>{service.description}</p>
+                <a href="#" className="underline ">
+                  view plans
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </main>
 
       <HorizontalSlider>

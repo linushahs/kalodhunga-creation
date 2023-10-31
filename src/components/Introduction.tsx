@@ -59,7 +59,7 @@ function Introduction() {
           >
             <h3 className="min-w-[35px] sm:min-w-[55px]"> 0{point.id}</h3>
 
-            <span className=" py-2 px-3.5 capitalize font-[400] bg-black text-white rounded-md sm:rounded-lg text-[13px] sm:text-[20px]">
+            <span className=" py-2 px-3.5 capitalize font-[400] bg-black text-white rounded-md sm:rounded-lg text-[16px] sm:text-[20px]">
               {point.title}
             </span>
           </li>
