@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 
 function NewServices() {
   const [hoveredService, setHoveredService] = useState(0);
+  const [selectedCategory, selectCategory] = useState("design");
 
   const variants = {
     visible: { opacity: 1, y: 0, transition: { delay: 0.2 } },
@@ -25,22 +26,27 @@ function NewServices() {
     setHoveredService(id);
   };
 
+  const category = Object.keys(servicesCategory);
+
   return (
     <section data-scroll-section id="services" className="container py-10 ">
       <h2 className="w-full border-b border-gray-500 pb-6">our services</h2>
 
       <main className="hidden lg:flex gap-x-8 mt-8">
-        {servicesCategory[0].services?.map((service, idx) => (
+        {servicesCategory[selectedCategory]?.map((service, idx) => (
           <motion.div
             layout
             key={service.title}
             className={twMerge(
-              "w-1/4 overflow-hidden rounded-md h-[450px] bg-cover transition-all duration-500 bg-center",
+              "w-1/4 relative z-30 overflow-hidden rounded-md h-[450px] bg-cover transition-all duration-500 bg-center",
               hoveredService === idx && "w-[550px] "
             )}
             style={{ backgroundImage: `url(${service.imgSrc})` }}
             onMouseOver={() => handleMouseOver(idx)}
           >
+            {/* black background ----  */}
+            <div className="w-full h-full absolute top-0 left-0 bg-black/40 -z-10"></div>
+
             <motion.div
               initial="hidden"
               animate={`${hoveredService === idx && "visible"}`}
@@ -62,6 +68,8 @@ function NewServices() {
         ))}
       </main>
 
+      {/* Mobile & Table view slider design ---------- */}
+      {/* --------------------------------->  */}
       <main className="lg:hidden mt-8">
         <Swiper
           slidesPerView={"auto"}
@@ -70,9 +78,6 @@ function NewServices() {
             640: {
               slidesPerView: 2,
             },
-            768: {
-              slidesPerView: 3,
-            },
           }}
           spaceBetween={15}
           grabCursor={true}
@@ -80,7 +85,7 @@ function NewServices() {
           modules={[FreeMode]}
           className="w-full h-[300px] sm:h-[450px]"
         >
-          {servicesCategory[0].services?.map((service) => (
+          {servicesCategory[selectedCategory]?.map((service) => (
             <SwiperSlide
               key={service.title}
               className={twMerge(
@@ -110,21 +115,21 @@ function NewServices() {
       </main>
 
       <HorizontalSlider>
-        {servicesCategory.map((category, id) => (
+        {category.map((c) => (
           <div
-            key={id}
+            key={c}
             className={twMerge(
               "category-wrap rounded-full min-w-fit",
-              id === 0 && "active"
+              c === selectedCategory && "active"
             )}
           >
             <button
-              key={category.title}
               className={
-                "h-full py-1.5 px-5 bg-black rounded-full text-white text-lg"
+                "h-full py-1.5 px-5 bg-black rounded-full text-white text-lg capitalize"
               }
+              onClick={() => selectCategory(c)}
             >
-              {category.title}
+              {c}
             </button>
           </div>
         ))}

@@ -33,7 +33,7 @@ function Testimonials() {
       data-scroll-section
       className="container py-10  flex items-center flex-col "
     >
-      <h1 className=" text-center">
+      <h1 className="text-center">
         your projects are in <br />
         safe hands
       </h1>

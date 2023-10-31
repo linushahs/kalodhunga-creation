@@ -4,11 +4,6 @@ type Service = {
   imgSrc: string;
 };
 
-type Category = {
-  title: string;
-  services?: Service[];
-};
-
 type Project = {
   title: string;
   description: string;
@@ -40,64 +35,214 @@ type TeamInfo = {
   imgSrc: string;
 };
 
-export const servicesCategory: Category[] = [
-  {
-    title: "Design",
-    services: [
-      {
-        title: "web and app design",
-        description: "mobile and applicaion designing services",
-        imgSrc: "/assets/webdesign.jpeg",
-      },
+export const servicesCategory: Record<string, Service[]> = {
+  design: [
+    {
+      title: "web and app design",
+      description: "mobile and applicaion designing services",
+      imgSrc: "/assets/webdesign.jpeg",
+    },
 
-      {
-        title: "Graphics and logo design",
-        description: "mobile and applicaion designing services",
-        imgSrc: "/assets/graphicsdesign.jpeg",
-      },
-      {
-        title: "Banner and poster design",
-        description: "mobile and applicaion designing services",
-        imgSrc: "/assets/servicepic-3.png",
-      },
-      {
-        title: "Social media and 3d model",
-        description: "mobile and applicaion designing services",
-        imgSrc: "/assets/servicepic-4.png",
-      },
-    ],
-  },
-  {
-    title: "Maintenance",
-  },
-  {
-    title: "Testing",
-  },
-  {
-    title: "Machine Learning",
-  },
-  {
-    title: "Consultation",
-  },
-  {
-    title: "Data",
-  },
-  {
-    title: "Mobile App",
-  },
-  {
-    title: "User Experience",
-  },
-  {
-    title: "User Interface",
-  },
-  {
-    title: "User Experience",
-  },
-  {
-    title: "User Interface",
-  },
-];
+    {
+      title: "Graphics and logo design",
+      description: "mobile and applicaion designing services",
+      imgSrc: "/assets/graphicsdesign.jpeg",
+    },
+    {
+      title: "Banner and poster design",
+      description: "mobile and applicaion designing services",
+      imgSrc: "/assets/servicepic-3.png",
+    },
+    {
+      title: "Social media and 3d model",
+      description: "mobile and applicaion designing services",
+      imgSrc: "/assets/servicepic-4.png",
+    },
+  ],
+  maintenance: [
+    {
+      title: "Application Maintenance and Support",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=869&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "24/7 Support",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Disaster Recovery and Business Continuity Planning",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1484662020986-75935d2ebc66?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Data Migration",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&q=80&w=1102&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ],
+  consulting: [
+    {
+      title: "IT Consulting",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://plus.unsplash.com/premium_photo-1663047145996-cdb1ef24a17a?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "Digital Transformation",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Product Strategy and Roadmapping",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://plus.unsplash.com/premium_photo-1664476348783-33fb49529d6d?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Competitive Analysis",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1588600878108-578307a3cc9d?auto=format&fit=crop&q=80&w=876&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ],
+  "QA & Security": [
+    {
+      title: "Quality Assurance and Testing",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "Cybersecurity Services",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&q=80&w=1030&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Compliance and Regulatory Support",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Competitive Analysis",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1588600878108-578307a3cc9d?auto=format&fit=crop&q=80&w=876&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ],
+  management: [
+    {
+      title: "Infrastructure Management",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "Cloud Services",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://plus.unsplash.com/premium_photo-1684522168034-32f22b4b7eef?auto=format&fit=crop&q=80&w=1032&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Scalability Planning",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://plus.unsplash.com/premium_photo-1664476348783-33fb49529d6d?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Partnership and Collaboration Opportunities",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ],
+  "User Experience": [
+    {
+      title: "User Experience (UX) and User Interface (UI) Design",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?auto=format&fit=crop&q=80&w=901&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "Open Source Software Contributions",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&q=80&w=888&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Legal and Intellectual Property Support",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ],
+  "Data & Analytics": [
+    {
+      title: "Data Analytics and Business Intelligence",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1115&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "Big Data Solutions",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://plus.unsplash.com/premium_photo-1661301037210-47bf02c98ded?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "AI and Machine Learning Services",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&q=80&w=1032&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Localization and Globalization",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1638202950928-83a735a11058?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ],
+  "Business Solutions": [
+    {
+      title: "ERP (Enterprise Resource Planning) Systems",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://plus.unsplash.com/premium_photo-1661301087289-a9067c2f933f?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "E-commerce Solutions",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://plus.unsplash.com/premium_photo-1684785617123-8dd039cdb2c2?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "CRM (Customer Relationship Management) Systems",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Industry-Specific Solutions",
+      description: "mobile and applicaion designing services",
+      imgSrc:
+        "https://plus.unsplash.com/premium_photo-1661301037210-47bf02c98ded?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ],
+};
 
 export const projects: Project[] = [
   {
