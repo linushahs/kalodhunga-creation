@@ -52,12 +52,15 @@ function WorkingProcess() {
               </h3>
               <p
                 className={twMerge(
-                  "hidden text-[15px] sm:text-lg",
+                  "hidden text-base sm:text-lg",
                   point.title === selectedPoint &&
                     "block text-gray-200 w-full md:w-3/4  lg:w-1/2"
                 )}
               >
-                {point.description}
+                <span className="hidden sm:block">{point.description}</span>
+                <span className="block sm:hidden">
+                  {point.short_description}
+                </span>
               </p>
             </div>
           </li>

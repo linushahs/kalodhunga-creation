@@ -13,6 +13,7 @@ type Project = {
 type WorkProcessPoint = {
   title: string;
   description: string;
+  short_description: string;
   img: string;
 };
 
@@ -272,24 +273,32 @@ export const workProcessPoints: WorkProcessPoint[] = [
     title: "Define Objectives and Scope",
     description:
       "At kalodhunga Creation, our software development process begins with a clear understanding of your objectives and the scope of your project. We collaborate closely with you to define the goals, functionalities, and desired outcomes. By gaining a deep insight into your vision, we lay the foundation for a successful partnership. Your objectives become our guiding star, leading us towards creating innovative and tailored software solutions that precisely align with your business needs.",
+    short_description:
+      "Kalodhunga Creation starts with a thorough understanding of your objectives and project scope, collaborating closely to define goals, functionalities, and desired outcomes, guiding us to create innovative, tailored software solutions.",
     img: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Plan and Strategize",
     description:
       "Once we perceive your objectives, our experienced team of strategists and developers precisely plan every step of the software development journey. We design a comprehensive roadmap that outlines the development stages, technology stack, and project timelines. Our strategic approach involves identifying potential challenges and designing effective solutions to ensure a seamless development process. We believe in transparency and keep you informed at every stage, ensuring that our strategy aligns perfectly with your expectations.",
+    short_description:
+      "Our team of strategists and developers meticulously plan the software development journey, creating a comprehensive roadmap, identifying challenges, and designing effective solutions, ensuring transparency and alignment with your expectations.",
     img: "https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&q=80&w=2068&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Execute and implement",
     description:
       "With a robust strategy in place, our skilled development team swings into action. We execute the planned phases of development with precision and expertise. Using cutting-edge technologies and agile methodologies, we transform concepts into functional, user-friendly software applications. Our developers work collaboratively, adhering to best coding practices, industry standards, and quality benchmarks. We take pride in delivering high-quality, scalable, and secure software solutions that exceed your expectations. Timely delivery and flawless execution are our hallmarks.",
+    short_description:
+      "Our skilled development team uses cutting-edge technologies and agile methodologies to transform concepts into functional, user-friendly software applications. We adhere to industry standards, delivering high-quality, scalable, and secure solutions.",
     img: "https://images.unsplash.com/photo-1574790398664-0cb03682ed1c?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "monitor and evaluate",
     description:
       "Our commitment to excellence doesn't end with the deployment of your software. We understand the importance of continuous improvement and monitoring. Our team conducts precise testing, quality assurance, and performance evaluations to ensure your software operates seamlessly in real-world scenarios. We proactively identify and address any issues, making sure your software functions optimally. Moreover, we provide ongoing support and maintenance services, keeping your software up-to-date and resilient to evolving challenges.",
+    short_description:
+      "Our commitment to excellence extends beyond software deployment, involving continuous improvement, monitoring, and maintenance. We conduct rigorous testing, quality assurance, and performance evaluations, proactively addressing issues and maintaining software resilience.",
     img: "https://images.unsplash.com/photo-1518186233392-c232efbf2373?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];

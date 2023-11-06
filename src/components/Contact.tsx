@@ -80,7 +80,7 @@ function Contact() {
           <h3 className={headingStyle}>Contact</h3>
 
           <p className={detailsStyle + "lowercase"}>info@kalodhunga.com</p>
-          <p className={detailsStyle}>9834230923</p>
+          <p className={detailsStyle}>976-1626624, 9862906276</p>
         </div>
 
         {/* address ------------------  */}

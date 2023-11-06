@@ -24,13 +24,13 @@ function OurTeam() {
         }}
         spaceBetween={30}
         grabCursor={true}
-        className="w-full mt-12 sm:mt-16  h-auto sm:h-[600px]"
+        className="w-full mt-8 sm:mt-16  h-auto sm:h-[600px]"
       >
         {teamInfo.map((member) => (
           <SwiperSlide
             key={member.id}
             className="
-          !w-[300px] h-full cursor-pointer  lg:!w-[350px] odd:mt-[60px]"
+          !w-[300px] h-full cursor-pointer  lg:!w-[350px] sm:odd:mt-[60px]"
           >
             <Image
               alt="avatar"
