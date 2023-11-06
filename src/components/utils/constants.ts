@@ -308,7 +308,7 @@ export const teamInfo: TeamInfo[] = [
     id: 1,
     name: "Sumit Yadav",
     position: "C.E.O. / Co-founder",
-    imgSrc: "/assets/member-pic.png",
+    imgSrc: "/assets/sumit_yadav.jpg",
   },
   {
     id: 2,
@@ -350,7 +350,7 @@ export const teamInfo: TeamInfo[] = [
     id: 8,
     name: "Ravi Roshan Jha",
     position: "Flutter Developer",
-    imgSrc: "/assets/member-pic.png",
+    imgSrc: "/assets/ravi_jha.png",
   },
   {
     id: 9,
