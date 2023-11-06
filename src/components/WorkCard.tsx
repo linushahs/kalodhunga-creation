@@ -23,10 +23,7 @@ function WorkCard({
           alt="project-thumbnail"
           width={1000}
           height={900}
-          className={twMerge(
-            "w-full h-full rounded-md object-cover",
-            className
-          )}
+          className={twMerge("w-full h-full rounded-md ", className)}
         />
       </div>
       <h2 className="mt-3 text-xl lg:text-2xl font-bold capitalize">{title}</h2>

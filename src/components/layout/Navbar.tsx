@@ -32,12 +32,14 @@ function Navbar() {
       id="home"
       className="navbar flex items-center justify-between text-black "
     >
-      <div className="flex items-center justify-between w-full pb-4 border-b border-gray-300">
+      <div className="flex items-center justify-between w-full pb-4 ">
         <motion.div
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: 0, opacity: 100, transition: { duration: 0.5 } }}
+          className="flex gap-3 items-center"
         >
           <Logo className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-15" />
+          <h3 className="text-xl lg:text-2xl">Kalodhunga Creations</h3>
         </motion.div>
         {/* right side  */}
         <motion.ul
@@ -138,6 +140,15 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
+      <motion.hr
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 100,
+          transition: { delay: 0.5, duration: 0.3 },
+        }}
+        className="absolute top-[80px] left-0 w-full h-[1.5] border-gray-300"
+      />
     </nav>
   );
 }
