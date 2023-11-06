@@ -74,12 +74,14 @@ function Navbar() {
           </li>
         </motion.ul>
 
-        <button
+        <motion.button
+          initial={{ y: "-100", opacity: 0 }}
+          animate={{ y: 0, opacity: 100, transition: { duration: 0.5 } }}
           onClick={() => setIsMenuOpen(true)}
           className="lg:hidden cursor-pointer"
         >
           <Bars3Icon className="w-9 h-9 text-black" />
-        </button>
+        </motion.button>
       </div>
 
       {/* backdrop : black ----------- */}

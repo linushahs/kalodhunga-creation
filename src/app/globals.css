@@ -34,6 +34,10 @@ body::-webkit-scrollbar {
   width: 1em;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar-track {
   background-color: #g2g2g2;
   border-radius: 40px;

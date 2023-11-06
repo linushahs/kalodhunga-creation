@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./locomotive-scroll.css";
+import Head from "next/head";
 
 // const SFPro = localFont({
 //   src: [
@@ -38,6 +39,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/assets/logo.png" />
+      </Head>
       <body>{children}</body>
     </html>
   );

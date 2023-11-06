@@ -8,7 +8,7 @@ function NewLandingPage() {
   return (
     <section
       data-scroll-section
-      className="relative lg:h-screen lg:overflow-y-hidden container flex flex-col w-full mx-auto   z-10"
+      className="relative lg:h-screen lg:overflow-hidden container flex flex-col w-full mx-auto   z-10"
     >
       <Navbar />
 
