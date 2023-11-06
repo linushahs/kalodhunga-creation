@@ -22,7 +22,7 @@ function WorkCard({
           src={imgSrc}
           alt="project-thumbnail"
           width={1000}
-          height={100}
+          height={900}
           className={twMerge(
             "w-full h-full rounded-md object-cover",
             className

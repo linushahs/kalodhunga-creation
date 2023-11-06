@@ -317,7 +317,7 @@ export const teamInfo: TeamInfo[] = [
     id: 4,
     name: "Ayusha Duwal",
     position: "Human Resource",
-    imgSrc: "/assets/member-pic.png",
+    imgSrc: "/assets/ayusha.jpg",
   },
   {
     id: 5,
@@ -335,7 +335,7 @@ export const teamInfo: TeamInfo[] = [
     id: 7,
     name: "Sunil Shah",
     position: "Frontend Engineer",
-    imgSrc: "/assets/member-pic.png",
+    imgSrc: "/assets/sunil_shah.jpg",
   },
   {
     id: 8,

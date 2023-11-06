@@ -79,7 +79,7 @@ function Contact() {
         <div className="flex flex-col gap-2 pb-4 border-b border-black sm:border-0">
           <h3 className={headingStyle}>Contact</h3>
 
-          <p className={detailsStyle + "lowercase"}>someemail@gmail.com</p>
+          <p className={detailsStyle + "lowercase"}>info@kalodhunga.com</p>
           <p className={detailsStyle}>9834230923</p>
         </div>
 
@@ -87,8 +87,8 @@ function Contact() {
         <div className="flex flex-col gap-2 pb-4  border-b border-black sm:border-0 sm:col-start-3 lg:col-start-4 lg:justify-self-end">
           <h3 className={headingStyle}>Address</h3>
 
-          <address className={detailsStyle}>kapan kathmandu nepal</address>
-          <address className={detailsStyle}>2245, 24th street</address>
+          <address className={detailsStyle}>Imadol-1, Lalitpur</address>
+          <address className={detailsStyle}>Nepal</address>
         </div>
       </div>
     </section>

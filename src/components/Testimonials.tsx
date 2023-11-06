@@ -39,7 +39,7 @@ function Testimonials() {
       </h1>
 
       {/* description/sub text --------- */}
-      <p className=" text-center w-full sm:w-3/4 lg:w-1/3 mx-auto mt-8 mb-6 text-gray-500  text-sm sm:text-md leading-[24px]">
+      <p className=" text-center w-full sm:w-3/4 lg:w-1/3 mx-auto mt-8 mb-6 text-gray-500  text-md sm:text-lg leading-[24px]">
         Our partnerships have delivered great value to our projects and
         we&apos;re happy to share some of their feedback below
       </p>
@@ -65,7 +65,7 @@ function Testimonials() {
         <h4 className="mt-10 mb-4 text-lg font-[600]">
           {currentTestimonial.author}
         </h4>
-        <div className="flex items-center gap-3 text-sm text-gray-600">
+        <div className="flex items-center gap-3 text-md text-gray-600">
           <p>{currentTestimonial.position}</p>
           <Image
             width={120}

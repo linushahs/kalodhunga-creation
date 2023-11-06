@@ -1,9 +1,9 @@
 import Logo from "../assets/Logo";
 
 const linkGroup = "first:mr-8 flex flex-col gap-3";
-const linkHeadStyle = "font-medium text-xl";
+const linkHeadStyle = "font-medium text-2xl";
 const linkStyle =
-  "text-gray-500 mt-5 hover:text-black hover:underline capitalize";
+  "text-lg text-gray-500 mt-6 cursor-pointer hover:text-black hover:underline capitalize";
 
 function Footer() {
   return (
@@ -20,7 +20,7 @@ function Footer() {
               </h3>
             </div>
 
-            <p className="w-full mt-4 lg:w-2/3 sm:mt-8  text-base text-gray-500">
+            <p className="w-full mt-4 lg:w-2/3 sm:mt-8  text-lg text-gray-500">
               Partner with us, and let&apos;s innovate together. By choosing
               Kalodhunga Creation, you are not just getting a software
               development partner, you are gaining a dedicated team that is
@@ -62,38 +62,24 @@ function Footer() {
             <h3 className={linkHeadStyle}>Other links</h3>
             <ul>
               <li className={linkStyle}>
-                <a href="#" className="w-full">
+                <a role="link" aria-disabled className="w-full">
                   Privacy Policy
                 </a>
               </li>
               <li className={linkStyle}>
-                <a href="#">Terms and Condition</a>
-              </li>
-              <li className={linkStyle}>
-                <a href="#">Use Cases</a>
-              </li>
-              <li className={linkStyle}>
-                <a href="#">careers</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className={linkGroup}>
-            <h3 className={linkHeadStyle}>Other links</h3>
-            <ul>
-              <li className={linkStyle}>
-                <a href="#" className="w-full">
-                  Privacy Policy
+                <a role="link" aria-disabled>
+                  Terms and Condition
                 </a>
               </li>
               <li className={linkStyle}>
-                <a href="#">Terms and Condition</a>
+                <a role="link" aria-disabled>
+                  Use Cases
+                </a>
               </li>
               <li className={linkStyle}>
-                <a href="#">Use Cases</a>
-              </li>
-              <li className={linkStyle}>
-                <a href="#">careers</a>
+                <a role="link" aria-disabled>
+                  careers
+                </a>
               </li>
             </ul>
           </div>

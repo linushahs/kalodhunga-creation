@@ -1,12 +1,12 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { FreeMode } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { twMerge } from "tailwind-merge";
 import HorizontalSlider from "../utils/HorizontalSlider";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { servicesCategory } from "../utils/constants";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
