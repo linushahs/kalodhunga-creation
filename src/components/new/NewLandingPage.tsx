@@ -8,7 +8,7 @@ function NewLandingPage() {
   return (
     <section
       data-scroll-section
-      className="relative lg:h-screen lg:overflow-hidden container flex flex-col w-full mx-auto   z-10"
+      className="relative lg:h-screen lg:overflow-hidden container flex flex-col w-full mx-auto z-10"
     >
       <Navbar />
 
@@ -19,7 +19,7 @@ function NewLandingPage() {
           opacity: 100,
           transition: { delay: 0.6, duration: 0.8 },
         }}
-        className="uppercase pt-10 landing-title"
+        className="uppercase pt-12 landing-title"
       >
         TRANSFORMING
       </motion.p>

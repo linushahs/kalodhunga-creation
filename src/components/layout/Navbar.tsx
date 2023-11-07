@@ -40,13 +40,10 @@ function Navbar() {
           className="flex gap-2 items-center"
         >
           <NewLogo className="w-16 h-12 sm:w-20 sm:h-16 lg:w-28 lg:h-20" />
-          {/* <Image
-            src="/assets/logo_black.png"
-            width={50}
-            height={20}
-            alt="logo"
-          /> */}
-          <h3 className="mt-1 text-xl lg:text-2xl">Kalodhunga Creations</h3>
+
+          <h3 className="hidden sm:block mt-1 text-xl lg:text-2xl">
+            Kalodhunga Creations
+          </h3>
         </motion.div>
         {/* right side  */}
         <motion.ul
@@ -107,7 +104,7 @@ function Navbar() {
         )}
       >
         <header className="px-6 pt-6 flex w-full justify-between">
-          <Logo className="w-10 h-10 " />
+          <NewLogo className="w-16 h-12 " />
 
           <button
             onClick={() => setIsMenuOpen(false)}
