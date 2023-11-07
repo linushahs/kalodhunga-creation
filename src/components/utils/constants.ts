@@ -26,7 +26,8 @@ type Testimonial = {
   comment: string;
   author: string;
   position: string;
-  companyLogo: string;
+  companyLogo?: string;
+  companyName?: string;
 };
 
 type TeamInfo = {
@@ -314,7 +315,7 @@ export const teamInfo: TeamInfo[] = [
     id: 2,
     name: "Prajwol Jung Kuwar",
     position: "C.T.O",
-    imgSrc: "/assets/member-pic.png",
+    imgSrc: "/assets/pratik_jung.jpg",
   },
   {
     id: 3,
@@ -369,42 +370,31 @@ export const teamInfo: TeamInfo[] = [
 export const socials: Social[] = [
   {
     name: "facebook",
-    link: "facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=100094881229401&mibextid=ZbWKwL",
   },
   {
     name: "instagram",
-    link: "instagram.com/",
+    link: "https://www.instagram.com/kalodhunga_creation?igshid=YTQwZjQ0NmI0OA%3D%3D",
   },
   {
-    name: "twitter",
-    link: "twitter.com/",
-  },
-  {
-    name: "behance",
-    link: "behance.com/",
+    name: "linkedin",
+    link: "https://www.linkedin.com/company/kalodhunga-creation/",
   },
 ];
 
 export const testimonials: Testimonial[] = [
   {
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringillaLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
-    author: "Harry Wells",
-    position: "Co founder & ceo of bitkub",
-    companyLogo: "/assets/bitkub-logo.png",
+      "As a creative problem solver, assembling the right team for my projects has always been a challenge. Kalodhunga changed the game. Their HR expertise in team curation is unmatched. They handpicked a team that perfectly aligned with my vision. This collaboration has transformed my work, enabling me to tackle complex problems with innovative solutions. Kalodhunga's approach is about understanding unique needs and building the right team. I can't recommend them enough for anyone seeking exceptional HR solutions that truly make a difference.",
+    author: "yasemin kilic",
+    position: "Creative Problem Solver",
+    companyName: "KBR Remodelling",
   },
   {
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringillaLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
-    author: "Barry Wells",
-    position: "Co founder & ceo of bitkub",
-    companyLogo: "/assets/bitkub-logo.png",
-  },
-  {
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringillaLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet maximus neque. Phasellus vestibulum velit non velit molestie, eu tincidunt ex tristique. Proin at vulputate nibh, eu mollis metus. In fringilla",
-    author: "Harrison Wells",
-    position: "Co founder & ceo of bitkub",
-    companyLogo: "/assets/bitkub-logo.png",
+      "Thanks to Kalodhunga, managing our tasks has gone from being a chore to pure joy! Their custom software solution not only streamlines our daily operations but also adds a dash of fun to the mix. It's like having a trusty sidekick that keeps us organized and productive. Kalodhunga's team understood our needs and delivered a solution that's transformed the way we work. We couldn't be happier with the results, and we can't recommend them enough for bringing a smile to our task management!",
+    author: "Tiffany Marokus",
+    position: "CTO, Co-Founder",
+    companyName: "EnvisionIT",
   },
 ];

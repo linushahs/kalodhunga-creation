@@ -1,4 +1,4 @@
-import Logo from "../assets/Logo";
+import NewLogo from "../assets/NewLogo";
 
 const linkGroup = "first:mr-8 flex flex-col gap-3 -mt-1";
 const linkHeadStyle = "font-medium text-2xl";
@@ -10,11 +10,11 @@ function Footer() {
     <section data-scroll-section className="container py-10 border-0 ">
       <div className="border-b xl:border-0 border-gray-300  flex flex-col-reverse gap-y-10 xl:flex-row xl:pb-6">
         {/* left side--- > */}
-        <div className="xl:w-[50%] pb-4 sm:pb-8 xl:pb-0 flex flex-col sm:flex-row sm:gap-8">
+        <div className="xl:w-[50%] pb-4 sm:pb-8 xl:pb-0 flex flex-col sm:flex-row ">
           {/* logo, description ---------- >  */}
-          <div className="flex flex-1 flex-col justify-start lg:justify-between ">
+          <div className="flex sm:w-[55%] lg:w-full flex-col justify-start lg:justify-between -mt-2">
             <div className="flex items-center gap-3">
-              <Logo className="w-14 h-14 lg:w-16 lg:h-16" />
+              <NewLogo className="w-16 h-12 sm:w-20 sm:h-16 lg:w-28 lg:h-20" />
               <h3 className="text-xl lg:text-2xl uppercase font-medium">
                 Kalodhunga Creations
               </h3>
@@ -30,7 +30,7 @@ function Footer() {
           </div>
 
           {/* created by ------------>  */}
-          <h3 className="flex-1 mt-8 sm:mt-4 text-left sm:text-right text-lg font-[600] lg:hidden">
+          <h3 className="flex-1 mt-8 sm:mt-2 text-left sm:text-right text-lg font-[600] lg:hidden">
             Created by designer for designers
           </h3>
         </div>

@@ -114,7 +114,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .navbar {
-    @apply w-full h-[60px] pt-10;
+    @apply w-full h-[40px] pt-6 sm:h-[60px] sm:pt-10;
   }
 
   .container {

@@ -27,7 +27,7 @@ function WorkCard({
         />
       </div>
       <h2 className="mt-3 text-xl lg:text-2xl font-bold capitalize">{title}</h2>
-      <p className="mt-1 text-gray-600 text-sm capitalize">{description}</p>
+      <p className="mt-1 text-gray-600 text-base capitalize">{description}</p>
     </div>
   );
 }

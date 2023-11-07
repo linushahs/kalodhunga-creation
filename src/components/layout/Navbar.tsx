@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { Bars3Icon } from "@heroicons/react/24/outline";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
-import { twMerge } from "tailwind-merge";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 import Logo from "../assets/Logo";
+import NewLogo from "../assets/NewLogo";
 
 type Menu = {
   id: number;
@@ -32,14 +33,20 @@ function Navbar() {
       id="home"
       className="navbar flex items-center justify-between text-black "
     >
-      <div className="flex items-center justify-between w-full pb-4 ">
+      <div className="flex items-center justify-between w-full sm:pb-4">
         <motion.div
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: 0, opacity: 100, transition: { duration: 0.5 } }}
-          className="flex gap-3 items-center"
+          className="flex gap-2 items-center"
         >
-          <Logo className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-15" />
-          <h3 className="text-xl lg:text-2xl">Kalodhunga Creations</h3>
+          <NewLogo className="w-16 h-12 sm:w-20 sm:h-16 lg:w-28 lg:h-20" />
+          {/* <Image
+            src="/assets/logo_black.png"
+            width={50}
+            height={20}
+            alt="logo"
+          /> */}
+          <h3 className="mt-1 text-xl lg:text-2xl">Kalodhunga Creations</h3>
         </motion.div>
         {/* right side  */}
         <motion.ul
@@ -149,7 +156,7 @@ function Navbar() {
           opacity: 100,
           transition: { delay: 0.5, duration: 0.3 },
         }}
-        className="absolute top-[80px] left-0 w-full h-[1.5] border-gray-300"
+        className="absolute top-[65px] sm:top-[80px] left-0 w-full h-[1.5] border-gray-300"
       />
     </nav>
   );

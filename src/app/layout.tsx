@@ -39,9 +39,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/assets/logo.png" />
-      </Head>
       <body>{children}</body>
     </html>
   );

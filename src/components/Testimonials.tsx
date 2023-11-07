@@ -11,6 +11,8 @@ import Image from "next/image";
 function Testimonials() {
   const [count, setCount] = useState(0);
   const currentTestimonial = testimonials[count];
+  const { comment, author, position, companyLogo, companyName } =
+    currentTestimonial;
 
   const goToNextTestimonial = () => {
     if (count >= testimonials.length - 1) {
@@ -59,21 +61,28 @@ function Testimonials() {
       {/* testimonial content ------------  */}
       <div className="flex flex-col items-center">
         <p className="w-full sm:text-lg text-gray-600 sm:w-3/4 lg:w-[40%] font-medium text-center">
-          {currentTestimonial.comment}
+          {comment}
         </p>
 
-        <h4 className="mt-10 mb-4 text-lg font-[600]">
-          {currentTestimonial.author}
+        <h4 className="capitalize mt-10 mb-4 text-lg lg:text-xl font-[600]">
+          {author}
         </h4>
-        <div className="flex items-center gap-3 text-md text-gray-600">
-          <p>{currentTestimonial.position}</p>
-          <Image
-            width={120}
-            height={100}
-            src={currentTestimonial.companyLogo}
-            alt="company-logo"
-            className="border-l border-black pl-3"
-          />
+        <div className="flex items-center gap-3 text-md lg:text-[17px] text-gray-600">
+          <p>{position}</p>
+
+          {companyLogo && (
+            <Image
+              width={120}
+              height={100}
+              src={companyLogo}
+              alt="company-logo"
+              className="border-l border-black pl-3"
+            />
+          )}
+
+          {companyName && (
+            <p className="border-l border-black pl-3">{companyName}</p>
+          )}
         </div>
       </div>
     </section>

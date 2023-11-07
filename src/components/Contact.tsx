@@ -66,6 +66,7 @@ function Contact() {
               <li key={social.name}>
                 <a
                   href={social.link}
+                  target="_blank"
                   className="py-1 px-3 text-base sm:text-lg font-medium rounded-full border border-black capitalize shadow-md hover:shadow-lg"
                 >
                   {social.name}
