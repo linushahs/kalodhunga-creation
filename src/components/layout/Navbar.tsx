@@ -31,7 +31,7 @@ function Navbar() {
   return (
     <nav
       id="home"
-      className="navbar flex items-center justify-between text-black "
+      className="navbar flex items-center justify-between text-black z-20"
     >
       <div className="flex items-center justify-between w-full sm:pb-4">
         <motion.div
@@ -147,14 +147,14 @@ function Navbar() {
         </ul>
       </div>
 
-      <motion.hr
+      {/* <motion.hr
         initial={{ opacity: 0 }}
         animate={{
           opacity: 100,
           transition: { delay: 0.5, duration: 0.3 },
         }}
         className="absolute top-[65px] sm:top-[80px] left-0 w-full h-[1.5] border-gray-300"
-      />
+      /> */}
     </nav>
   );
 }
