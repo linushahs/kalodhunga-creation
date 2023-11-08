@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 @layer base {
   h1 {
     font-family: "SF Pro Medium", sans-serif;
-    @apply capitalize text-[32px] leading-[34px] font-[600]  sm:text-[40px] sm:leading-[40px] lg:font-[500] lg:text-[4vw] lg:leading-[4vw];
+    @apply capitalize text-[32px] leading-[34px] font-[600]  sm:text-[40px] sm:leading-[40px] lg:text-[4vw] lg:leading-[4vw];
   }
 
   h2 {
