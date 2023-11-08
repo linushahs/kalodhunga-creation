@@ -8,7 +8,6 @@ import Testimonials from "@/components/Testimonials";
 import WorkingProcess from "@/components/WorkingProcess";
 import Footer from "@/components/layout/Footer";
 import LandingPageV2 from "@/components/new/LandingPageV2";
-import NewLandingPage from "@/components/new/NewLandingPage";
 import NewServices from "@/components/new/NewServices";
 
 export default function Home() {

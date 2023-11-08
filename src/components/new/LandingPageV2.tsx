@@ -3,11 +3,11 @@ import Navbar from "../layout/Navbar";
 import * as Icon from "./assets/index";
 
 const elementsStyle =
-  "-z-10 absolute w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] xl:w-[120px] xl:h-[120px]";
+  "hidden sm:block -z-10 absolute w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] xl:w-[120px] xl:h-[120px]";
 
 function LandingPageV2() {
   return (
-    <section className="relative h-full lg:h-screen lg:overflow-hidden container flex flex-col w-full mx-auto z-10">
+    <section className="relative h-full lg:overflow-hidden container flex flex-col w-full mx-auto z-10">
       <Navbar />
 
       {/* grid transparent image ---------------  */}
@@ -28,7 +28,7 @@ function LandingPageV2() {
           Where creativity meets code
         </h1>
 
-        <p className="w-[96%] sm:w-2/3 lg:w-[55%] xl:w-[45%] py-10 lg:py-8 text-sm sm:text-base md:text-lg text-gray-500 text-center">
+        <p className="w-[96%] sm:w-2/3 lg:w-[55%] xl:w-[45%] py-10 2xl:py-12 text-sm sm:text-base md:text-lg text-gray-500 text-center">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dolor
           quasi minima quia. Debitis vero at, amet, consequuntur doloribus
           blanditiis quibusdam praesentium repellat voluptatem quis quia omnis
@@ -46,7 +46,7 @@ function LandingPageV2() {
             type="submit"
             className="bg-[#322EFF] hover:bg-[#322EFF]/90 py-2.5 px-4 rounded-lg text-white w-fit sm:w-[160px] sm:text-xl"
           >
-            Contact me
+            Contact us
           </button>
         </form>
 
@@ -77,8 +77,8 @@ function LandingPageV2() {
       </main>
 
       {/* image section --------------  */}
-      <div className="flex justify-center mt-32 sm:mt-24 lg:mt-16">
-        <div className="relative lg:absolute lg:-bottom-1.5 md:w-[700px] xl:w-[900px] h-[170px] sm:h-[220px]">
+      <div className="flex justify-center mt-32 sm:mt-28 ">
+        <div className="relative md:w-[700px] xl:w-[900px] h-[170px] sm:h-[220px]">
           <Image
             src="/assets/landing-pic.png"
             alt="landing picture"
