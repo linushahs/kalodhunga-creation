@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        "3xl": "1920",
+        "3xl": "1720px",
+        "4xl": "1920px",
       },
       colors: {
         purple: "#A566F6",

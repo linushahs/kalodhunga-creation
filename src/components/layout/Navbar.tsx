@@ -53,7 +53,7 @@ function Navbar() {
             opacity: 100,
             transition: { delay: 0.2, duration: 0.5 },
           }}
-          className="lg:flex items-center gap-12 hidden font-[500] lg:text-xl 3xl:text-2xl"
+          className="lg:flex items-center gap-12 xl:gap-14 hidden font-[500] lg:text-xl 3xl:text-2xl"
         >
           <li>
             <a href="#home" className="underline ">

@@ -7,7 +7,7 @@ const elementsStyle =
 
 function LandingPageV2() {
   return (
-    <section className="relative h-full lg:overflow-hidden container flex flex-col w-full mx-auto z-10">
+    <section className="relative h-full xl:h-screen lg:overflow-hidden container flex flex-col w-full mx-auto z-10">
       <Navbar />
 
       {/* grid transparent image ---------------  */}
@@ -16,11 +16,11 @@ function LandingPageV2() {
         alt="background grid "
         width={1300}
         height={500}
-        className="h-[80%] md:h-[600px] absolute -z-30 left-1/2 top-0 -translate-x-1/2 opacity-40"
+        className="h-[80%] md:h-[600px] 3xl:w-[1500px] xl:h-auto absolute -z-30 left-1/2 top-0 -translate-x-1/2 opacity-40"
       />
 
       <main
-        className="relative flex flex-col items-center pt-20 sm:pt-16 xl:pt-12"
+        className="relative flex flex-col items-center pt-20 sm:pt-16 3xl:pt-20"
         style={{ backgroundImage: `url('')` }}
       >
         <h1 className="text-center">
@@ -28,7 +28,7 @@ function LandingPageV2() {
           Where creativity meets code
         </h1>
 
-        <p className="w-[96%] sm:w-2/3 lg:w-[55%] xl:w-[45%] py-10 2xl:py-12 text-sm sm:text-base md:text-lg text-gray-500 text-center">
+        <p className="w-[96%] sm:w-2/3 lg:w-[55%] xl:w-[45%] py-10 3xl:py-16 text-sm sm:text-base md:text-lg 3xl:text-xl text-gray-500 text-center">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dolor
           quasi minima quia. Debitis vero at, amet, consequuntur doloribus
           blanditiis quibusdam praesentium repellat voluptatem quis quia omnis
@@ -39,7 +39,7 @@ function LandingPageV2() {
         <form className="w-full flex justify-center gap-4">
           <input
             type="text"
-            className="py-2.5 px-4 rounded-lg  sm:text-xl w-[60%] sm:w-[40%] xl:w-[460px]"
+            className="py-2.5 px-4 xl:py-3 rounded-lg  sm:text-xl w-[60%] sm:w-[40%] xl:w-[460px]"
             placeholder="Say Hello"
           />
           <button
@@ -77,7 +77,7 @@ function LandingPageV2() {
       </main>
 
       {/* image section --------------  */}
-      <div className="flex justify-center mt-32 sm:mt-28 ">
+      <div className="flex justify-center mt-32 xl:mt-auto sm:mt-28 ">
         <div className="relative md:w-[700px] xl:w-[900px] h-[170px] sm:h-[220px]">
           <Image
             src="/assets/landing-pic.png"
